@@ -1,0 +1,18 @@
+<resources>
+    <string name="title_home">goFirst</string>
+    <string name="title_dashboard">goSecond</string>
+    <string name="title_notifications">待定</string>
+
+    <string name="navigation_main_bottom_home">首页</string>
+    <string name="navigation_main_bottom_apply">应用</string>
+    <string name="navigation_main_bottom_service">服务</string>
+    <string name="navigation_main_bottom_mine">我的</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_base_info">BaseInfoActivity</string>
+
+</resources>

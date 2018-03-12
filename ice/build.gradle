@@ -1,0 +1,129 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.jakewharton.butterknife'
+
+android {
+
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    defaultPublishConfig "debug"
+    defaultConfig {
+
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //support
+    //    compile(rootProject.ext.dependencies["support-v4"]) {
+    //        exclude module: 'support-annotations'
+    //    }
+    compile(rootProject.ext.dependencies["appcompat-v7"]) {
+        exclude module: 'support-annotations'
+//        exclude module: 'support-v4'
+    }
+    compile(rootProject.ext.dependencies["design"]) {
+        exclude module: 'support-annotations'
+        exclude module: 'appcompat-v7'
+        exclude module: 'support-v4'
+    }
+    compile rootProject.ext.dependencies["annotations"]
+    //View
+    //    compile(rootProject.ext.dependencies["autolayout"]) {
+    //        exclude group: 'com.android.support'
+    //    }
+    compile(rootProject.ext.dependencies["vlayout"]) {
+        transitive = true
+    }
+    compile rootProject.ext.dependencies["fragmentation"]
+    compile rootProject.ext.dependencies["cardview-v7"]
+    compile rootProject.ext.dependencies["SuperTextView"]
+    compile rootProject.ext.dependencies["AndroidPicker"]
+    compile rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    //rx
+    compile rootProject.ext.dependencies["rxjava2"]
+    compile(rootProject.ext.dependencies["rxandroid2"]) {
+        exclude module: 'rxjava'
+    }
+    compile(rootProject.ext.dependencies["rxcache2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'dagger'
+    }
+    compile(rootProject.ext.dependencies["rxcache-jolyglot-gson"]) {
+        exclude module: 'gson'
+    }
+    compile(rootProject.ext.dependencies['rxerrorhandler2']) {
+        exclude module: 'rxjava'
+    }
+    compile(rootProject.ext.dependencies["rxlifecycle2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'jsr305'
+    }
+    compile(rootProject.ext.dependencies["rxlifecycle2-components"]) {
+        exclude module: 'support-v4'
+        exclude module: 'appcompat-v7'
+        exclude module: 'support-annotations'
+        exclude module: 'rxjava'
+        exclude module: 'rxandroid'
+        exclude module: 'rxlifecycle'
+    }
+    //net
+    compile(rootProject.ext.dependencies["retrofit"]) {
+        exclude module: 'okhttp3'
+    }
+    compile(rootProject.ext.dependencies["retrofit-converter-gson"]) {
+        exclude module: 'gson'
+    }
+    compile(rootProject.ext.dependencies["retrofit-adapter-rxjava2"]) {
+        exclude module: 'rxjava'
+    }
+    //    compile rootProject.ext.dependencies["okhttp3"]
+    compile rootProject.ext.dependencies["okhttp-logging-interceptor"]
+    //image
+    compile(rootProject.ext.dependencies["glide"]) {
+        exclude group: 'com.android.support'
+        exclude module: 'support-annotations'
+    }
+    annotationProcessor(rootProject.ext.dependencies["glide-compiler"]) {
+        exclude module: 'jsr305'
+    }
+    //tools
+    compile rootProject.ext.dependencies["dagger2"]
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+    compile rootProject.ext.dependencies["androideventbus"]
+    compile rootProject.ext.dependencies["gson"]
+    compile rootProject.ext.dependencies["boxing"]
+    //图片选择
+    compile(rootProject.ext.dependencies["ucrop"]) {   //图片裁切
+        exclude group: 'com.android.support'
+        exclude group: 'com.squareup.okio'
+        exclude group: 'com.squareup.okhttp3'
+    }
+    //test
+    testCompile rootProject.ext.dependencies["junit"]
+    //aop
+    compile rootProject.ext.dependencies["aspectj"]
+    compile project(':lib')
+    annotationProcessor project(':apt')
+
+    //atlas
+    compile(rootProject.ext.dependencies["atlascore"]) {
+        transitive = true
+    }
+}
+apply plugin: com.thinkwage.plugin.AspectPlugin
+

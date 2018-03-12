@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VisionTestBundle</string>
+    <string name="rule1">请保持手机在眼前2.5米处；</string>
+    <string name="rule2">请根据\"E\"开口方向清晰读出\"上边\"  \"下边\"  \"左边\"  \"右边\"。</string>
+    <string name="test_finish">{eye}测试完成</string>
+    <string name="testing">正在测试{eye}，请读出开口方向</string>
+    <string name="test_ready">测试{eye}，请准备</string>
+</resources>

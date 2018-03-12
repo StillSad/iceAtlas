@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toobar" />
+
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/icon_lock"
+        android:drawablePadding="10dp"
+        android:hint="给孩子取个好听的昵称"
+        android:paddingLeft="15dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/LayoutMargin26"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/selector_btn"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>
+

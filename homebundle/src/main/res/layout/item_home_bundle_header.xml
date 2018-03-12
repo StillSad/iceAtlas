@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_home_bundle_header_top_bg"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="14dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_query"
+        android:layout_width="161dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="48dp"
+        android:background="@mipmap/icon_home_bundle_top_oval"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即查个税"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="总额、明细"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tax"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--            <TextView
+                        android:id="@+id/tv_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80dp"
+                        android:drawablePadding="12dp"
+                        android:drawableRight="@mipmap/icon_home_bundle_eye_open"
+                        android:paddingBottom="5dp"
+                        android:text="累计缴纳"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />-->
+
+        <!--       <LinearLayout
+                   android:id="@+id/ll_money"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginTop="5dp"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/tv_money_char"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="￥"
+                       android:textColor="@color/white"
+                       android:textSize="17sp" />
+
+                   <TextView
+                       android:id="@+id/tv_money"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="30000.00"
+                       android:textColor="@color/white"
+                       android:textSize="33sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_sysnc"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="11dp"
+                   android:gravity="center"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/tv_item_rate"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="约已超过90%的同城用户"
+                       android:textColor="@color/white"
+                       android:textSize="12sp" />
+
+                   <TextView
+                       android:id="@+id/im_sync"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:drawableLeft="@mipmap/icon_home_bundle_flush_white"
+                       android:drawableStart="@mipmap/icon_home_bundle_flush_white"
+                       android:padding="8dp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_income"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="25dp"
+                   android:gravity="center"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/tv_home_revenue_bill"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="54dp"
+                       android:background="@drawable/shape_home_bundle_white_border"
+                       android:paddingBottom="8dp"
+                       android:paddingLeft="32dp"
+                       android:paddingRight="32dp"
+                       android:paddingTop="8dp"
+                       android:text="收入账单"
+                       android:textColor="@color/white"
+                       android:textSize="13dp" />
+
+                   <TextView
+                       android:id="@+id/tv_home_revenue_increment"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/shape_home_bundle_white_border"
+                       android:paddingBottom="8dp"
+                       android:paddingLeft="32dp"
+                       android:paddingRight="32dp"
+                       android:paddingTop="8dp"
+                       android:text="收入增值"
+                       android:textColor="@color/white"
+                       android:textSize="13dp"
+                       />
+               </LinearLayout>-->
+    </LinearLayout>
+
+    <!--  <TextView
+          android:id="@+id/tv_query_step"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:drawablePadding="3dp"
+          android:drawableRight="@mipmap/icon_home_bundle_step_arrow"
+          android:text="了解查询步骤"
+          android:textColor="@color/white"
+          android:textSize="11sp" />
+
+      <TextView
+          android:id="@+id/tv_scheme1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:drawableLeft="@mipmap/icon_home_bundle_speaker"
+          android:drawablePadding="5dp"
+          android:gravity="center"
+          android:text="个税改革初步方案"
+          android:textColor="@color/white"
+          android:textSize="12sp" />
+
+      <TextView
+          android:id="@+id/tv_scheme2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:drawableLeft="@mipmap/icon_home_bundle_speaker"
+          android:drawablePadding="5dp"
+          android:gravity="center"
+          android:text="个税改革初步方案"
+          android:textColor="@color/white"
+          android:textSize="12sp"
+          android:visibility="gone" />-->
+</LinearLayout>

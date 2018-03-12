@@ -1,0 +1,206 @@
+
+group = 'com.ice.app.atlasdemo'
+version = getEnvValue("versionName", "1.0.1");
+def apVersion = getEnvValue("apVersion", "");
+
+
+//apply plugin: 'com.taobao.atlas.application'
+//apply plugin: 'com.jakewharton.butterknife'
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.taobao.atlas'
+//apply plugin: 'com.taobao.atlas.dexpatch'
+//apply from: 'dexPatchWraper.gradle'
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+android {
+
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        // 开启multidex
+        multiDexEnabled false
+        applicationId "com.thinkwage.geshui"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode 1
+        versionName version
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+//            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            ndk {
+                //设置支持的SO库架构
+                abiFilters 'armeabi', 'x86'
+            }
+        }
+    }
+
+    flavorDimensions "release"
+
+    productFlavors {
+        ceshi {
+            dimension "release"
+        }
+        Huawei{
+            dimension "release"
+        }
+    }
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:2.0.1'
+    }
+}
+
+dependencies {
+//    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+    //
+//    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+//    annotationProcessor project(':apt')
+//    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+
+    //atlas
+    compile rootProject.ext.dependencies["atlasupdate"]
+    compile (rootProject.ext.dependencies["atlascore"]) {
+        transitive = true
+    }
+
+    //基础库
+//    providedCompile project(':ice')
+//    compile project(':ice')
+    providedCompile project(path: ':ice', configuration: 'compileProject')
+    providedCompile project(path:':activitygroupcompat',configuration: "compileProject")
+//    providedCompile project(':iflyteklib')
+//    compile project(':activitygroupcompat')
+//    compile project(':splashscreen')
+    //bundle
+//    bundleCompile project(':loginbundle')
+//    bundleCompile project(':userinfobundle')
+//    bundleCompile project(':revisebundle')
+//    bundleCompile project(':visiontestbundle')
+    bundleCompile project(path: ':homebundle', configuration: 'compileProject')
+
+    bundleCompile project(path: ':applybundle', configuration: 'compileProject')
+    bundleCompile project(path: ':servicebundle', configuration: 'compileProject')
+    bundleCompile project(path: ':minebundle', configuration: 'compileProject')
+//    bundleCompile project(':applybundle')
+//    bundleCompile project(':servicebundle')
+//    bundleCompile project(':minebundle')
+}
+
+
+atlas {
+
+    atlasEnabled true
+    tBuildConfig {
+        autoStartBundles = [
+                'com.thinkwage.homebundle',
+                'com.thinkwage.applybundle',
+                'com.thinkwage.servicebundle',
+                'com.thinkwage.minebundle',
+//                            'com.ice.loginbundle',
+//                            'com.ice.revisebundle',
+//                            'com.ice.visiontestbundle',
+//                            'com.ice.minutesbundle',
+//                            "com.ice.heightandweightbundle"
+        ] //自启动bundle配置
+//        outOfApkBundles = ['remotebundle']
+//        preLaunch = 'com.taobao.demo.DemoPreLaunch'
+        classInject false
+
+
+    }
+
+    manifestOptions {
+        addAtlasProxyComponents true
+    }
+
+
+    patchConfigs {
+        debug {
+            createTPatch true
+        }
+    }
+
+
+    buildTypes {
+        debug {
+            if (apVersion) {
+                baseApDependency "com.ice.app.atlasdemo:AP-debug:${apVersion}@ap"
+                patchConfig patchConfigs.debug
+            }
+        }
+    }
+}
+
+String getEnvValue(key, defValue) {
+    def val = System.getProperty(key);
+    if (null != val) {
+        return val;
+    }
+    val = System.getenv(key);
+    if (null != val) {
+        return val;
+    }
+    return defValue;
+}
+
+tasks.whenTaskAdded { task ->
+    if (task.name.contains("DebugAndroidTest")) {
+        task.setEnabled(false);
+    }
+    if (task.name.contains("assemble")) {
+        def files = null;
+        def file = new File(task.project.getBuildDir(), "outputs");
+        if (file.exists() && new File(file, "tpatch-debug").exists()) {
+            files = new File(file, "tpatch-debug").listFiles();
+        }
+
+        if (files != null) {
+            for (File file1 : files) {
+                if (file1.getName().endsWith(".json") || file1.getName().endsWith(".tpatch")) {
+
+                    if (!new File(task.project.getRootDir(), "hisTpatch").exists()) {
+                        new File(task.project.getRootDir(), "hisTpatch").mkdirs();
+                    }
+                    org.apache.commons.io.FileUtils.copyFileToDirectory(file1, new File(task.project.getRootDir(), "hisTpatch"));
+                }
+            }
+        }
+    }
+}
+//
+apply plugin: com.thinkwage.plugin.AspectPlugin
+
+
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+publishing {
+    repositories {
+        mavenLocal()
+    }
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            artifact "${project.buildDir}/outputs/apk/${project.name}-debug.ap"
+            artifactId "AP-debug"
+        }
+    }
+}

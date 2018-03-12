@@ -1,0 +1,17 @@
+include ':activitygroupcompat', ':buildsrc'
+//include ':myapplication'
+//include ':fragmentation_core'
+//, ':visiontestbundle', ':api', ':minutesbundle', ':heightandweightbundle'
+include ':ice'
+include ':apt'
+//include ':buildsrc'
+include ':lib'
+include ':app'
+//include ':splashscreen'
+
+//bundle
+include ':homebundle'
+include ':applybundle'
+include ':servicebundle'
+include ':minebundle'
+

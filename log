@@ -1,0 +1,1657 @@
+ICEdeMacBook-Pro:atlas ice$ ./gradlew clean assembleDebug --info
+Initialized native services in: /Users/ice/.gradle/native
+Found daemon DaemonInfo{pid=1328, address=[1144007b-be03-4f96-b04a-8194c11cf7a1 port:54746, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]], state=Idle, lastBusy=1519977682147, context=DefaultDaemonContext[uid=e75141ed-e155-4a6c-89eb-ca8f2efe1974,javaHome=/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home,daemonRegistryDir=/Users/ice/.gradle/daemon,pid=1328,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=2048m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx4096m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home,daemonRegistryDir=/Users/ice/.gradle/daemon,pid=1355,idleTimeout=null,daemonOpts=-XX:MaxPermSize=2048m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx4096m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]
+Actual: DefaultDaemonContext[uid=e75141ed-e155-4a6c-89eb-ca8f2efe1974,javaHome=/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home,daemonRegistryDir=/Users/ice/.gradle/daemon,pid=1328,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=2048m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx4096m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 794). The daemon log file: /Users/ice/.gradle/daemon/4.1/daemon-794.out.log
+Starting 12th build in daemon [uptime: 43 mins 30.719 secs, performance: 99%, no major garbage collections]
+Using 8 worker leases.
+Creating new cache for fileHashes, path /Users/ice/Desktop/atlas/.gradle/4.1/fileHashes/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheAccess@772aa5ca
+Creating new cache for plugin-use-metadata, path /Users/ice/.gradle/caches/4.1/plugin-resolution/plugin-use-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@46bea5de
+Creating new cache for client-status, path /Users/ice/.gradle/caches/4.1/plugin-resolution/client-status.bin, access org.gradle.cache.internal.DefaultCacheAccess@46bea5de
+Starting Build
+Creating new cache for metadata-1.1/results, path /Users/ice/.gradle/caches/transforms-1/metadata-1.1/results.bin, access org.gradle.cache.internal.DefaultCacheAccess@771f526d
+Parallel execution is an incubating feature.
+
+> Configure project :buildsrc
+Evaluating project ':buildsrc' using build file '/Users/ice/Desktop/atlas/buildsrc/build.gradle'.
+
+Creating new cache for metadata-2.23/module-metadata, path /Users/ice/.gradle/caches/modules-2/metadata-2.23/module-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@152868ba
+Creating new cache for metadata-2.23/artifact-at-repository, path /Users/ice/.gradle/caches/modules-2/metadata-2.23/artifact-at-repository.bin, access org.gradle.cache.internal.DefaultCacheAccess@152868ba
+Selected primary task 'build' from project :
+Creating new cache for annotation-processors, path /Users/ice/Desktop/atlas/buildsrc/.gradle/4.1/fileContent/annotation-processors.bin, access org.gradle.cache.internal.DefaultCacheAccess@76f20ed6
+Creating new cache for resourceHashesCache, path /Users/ice/Desktop/atlas/.gradle/4.1/fileHashes/resourceHashesCache.bin, access org.gradle.cache.internal.DefaultCacheAccess@772aa5ca
+Creating new cache for fileSnapshots, path /Users/ice/Desktop/atlas/buildsrc/.gradle/4.1/taskHistory/fileSnapshots.bin, access org.gradle.cache.internal.DefaultCacheAccess@513ad820
+Creating new cache for taskHistory, path /Users/ice/Desktop/atlas/buildsrc/.gradle/4.1/taskHistory/taskHistory.bin, access org.gradle.cache.internal.DefaultCacheAccess@513ad820
+:compileJava (Thread[Task worker for ':buildsrc',5,main]) started.
+
+> Task :buildsrc:compileJava
+Putting task artifact state for task ':buildsrc:compileJava' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/buildsrc/src/main/java', not found
+Skipping task ':buildsrc:compileJava' as it has no source files and no previous output files.
+
+:compileJava (Thread[Task worker for ':buildsrc',5,main]) completed. Took 0.0 secs.
+:compileGroovy (Thread[Task worker for ':buildsrc',5,main]) started.
+This JVM does not support getting OS memory, so no OS memory status updates will be broadcast
+Initialized native services in: /Users/ice/.gradle/native
+
+> Task :buildsrc:compileGroovy
+Putting task artifact state for task ':buildsrc:compileGroovy' into context took 0.0 secs.
+Executing task ':buildsrc:compileGroovy' (up-to-date check took 0.007 secs) due to:
+  Output property 'destinationDir' file /Users/ice/Desktop/atlas/buildsrc/build/classes/groovy/main has changed.
+  Output property 'destinationDir' file /Users/ice/Desktop/atlas/buildsrc/build/classes/groovy/main/com has been removed.
+  Output property 'destinationDir' file /Users/ice/Desktop/atlas/buildsrc/build/classes/groovy/main/com/thinkwage has been removed.
+Starting process 'Gradle Worker Daemon 3'. Working directory: /Users/ice/.gradle/workers Command: /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/bin/java -Djava.security.manager=worker.org.gradle.process.internal.worker.child.BootstrapSecurityManager -Dfile.encoding=UTF-8 -Duser.country=CN -Duser.language=zh -Duser.variant -cp /Users/ice/.gradle/caches/4.1/workerMain/gradle-worker.jar worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Worker Daemon 3'
+Successfully started process 'Gradle Worker Daemon 3'
+Started Gradle worker daemon (0.331 secs) with fork options DaemonForkOptions{executable=/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/bin/java, minHeapSize=null, maxHeapSize=null, jvmArgs=[], classpath=[/Users/ice/.gradle/wrapper/dists/gradle-4.1-all/38gmb0xnu6gupohgu61ilzbig/gradle-4.1/lib/groovy-all-2.4.11.jar, /Users/ice/.gradle/wrapper/dists/gradle-4.1-all/38gmb0xnu6gupohgu61ilzbig/gradle-4.1/lib/ant-1.9.6.jar, /Users/ice/.gradle/wrapper/dists/gradle-4.1-all/38gmb0xnu6gupohgu61ilzbig/gradle-4.1/lib/ant-launcher-1.9.6.jar], keepAliveMode=SESSION}.
+
+:compileGroovy (Thread[Task worker for ':buildsrc',5,main]) completed. Took 1.254 secs.
+:processResources (Thread[Task worker for ':buildsrc',5,main]) started.
+
+> Task :buildsrc:processResources
+Putting task artifact state for task ':buildsrc:processResources' into context took 0.0 secs.
+Executing task ':buildsrc:processResources' (up-to-date check took 0.001 secs) due to:
+  Output property 'destinationDir' file /Users/ice/Desktop/atlas/buildsrc/build/resources/main has changed.
+  Output property 'destinationDir' file /Users/ice/Desktop/atlas/buildsrc/build/resources/main/META-INF has been removed.
+  Output property 'destinationDir' file /Users/ice/Desktop/atlas/buildsrc/build/resources/main/META-INF/gradle-plugins has been removed.
+
+:processResources (Thread[Task worker for ':buildsrc',5,main]) completed. Took 0.003 secs.
+:classes (Thread[Task worker for ':buildsrc',5,main]) started.
+
+> Task :buildsrc:classes
+Skipping task ':buildsrc:classes' as it has no actions.
+
+:classes (Thread[Task worker for ':buildsrc',5,main]) completed. Took 0.0 secs.
+:jar (Thread[Task worker for ':buildsrc',5,main]) started.
+
+> Task :buildsrc:jar
+Putting task artifact state for task ':buildsrc:jar' into context took 0.0 secs
+Executing task ':buildsrc:jar' (up-to-date check took 0.0 secs) due to:
+  Output property 'archivePath' file /Users/ice/Desktop/atlas/buildsrc/build/libs/buildsrc.jar has changed.
+
+:jar (Thread[Task worker for ':buildsrc',5,main]) completed. Took 0.005 secs.
+:assemble (Thread[Task worker for ':buildsrc',5,main]) started.
+
+> Task :buildsrc:assemble
+Skipping task ':buildsrc:assemble' as it has no actions.
+
+:assemble (Thread[Task worker for ':buildsrc',5,main]) completed. Took 0.0 secs.
+:compileTestJava (Thread[Task worker for ':buildsrc' Thread 4,5,main]) started.
+
+> Task :buildsrc:compileTestJava
+Putting task artifact state for task ':buildsrc:compileTestJava' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/buildsrc/src/test/java', not found
+Skipping task ':buildsrc:compileTestJava' as it has no source files and no previous output files.
+
+:compileTestJava (Thread[Task worker for ':buildsrc' Thread 4,5,main]) completed. Took 0.0 secs.
+:compileTestGroovy (Thread[Task worker for ':buildsrc' Thread 4,5,main]) started.
+
+> Task :buildsrc:compileTestGroovy
+Putting task artifact state for task ':buildsrc:compileTestGroovy' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/buildsrc/src/test/groovy', not found
+Skipping task ':buildsrc:compileTestGroovy' as it has no source files and no previous output files.
+
+:compileTestGroovy (Thread[Task worker for ':buildsrc' Thread 4,5,main]) completed. Took 0.001 secs.
+:processTestResources (Thread[Task worker for ':buildsrc' Thread 4,5,main]) started.
+
+> Task :buildsrc:processTestResources
+Putting task artifact state for task ':buildsrc:processTestResources' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/buildsrc/src/test/resources', not found
+Skipping task ':buildsrc:processTestResources' as it has no source files and no previous output files.
+
+:processTestResources (Thread[Task worker for ':buildsrc' Thread 4,5,main]) completed. Took 0.0 secs.
+:testClasses (Thread[Task worker for ':buildsrc' Thread 4,5,main]) started.
+
+> Task :buildsrc:testClasses
+Skipping task ':buildsrc:testClasses' as it has no actions.
+
+:testClasses (Thread[Task worker for ':buildsrc' Thread 4,5,main]) completed. Took 0.0 secs.
+:test (Thread[Task worker for ':buildsrc' Thread 4,5,main]) started.
+
+> Task :buildsrc:test
+Putting task artifact state for task ':buildsrc:test' into context took 0.001 secs.
+Skipping task ':buildsrc:test' as it has no source files and no previous output files.
+
+:test (Thread[Task worker for ':buildsrc' Thread 4,5,main]) completed. Took 0.001 secs.
+:check (Thread[Task worker for ':buildsrc' Thread 4,5,main]) started.
+
+> Task :buildsrc:check
+Skipping task ':buildsrc:check' as it has no actions.
+
+:check (Thread[Task worker for ':buildsrc' Thread 4,5,main]) completed. Took 0.0 secs.
+:build (Thread[Task worker for ':buildsrc' Thread 4,5,main]) started.
+
+> Task :buildsrc:build
+Skipping task ':buildsrc:build' as it has no actions.
+
+:build (Thread[Task worker for ':buildsrc' Thread 4,5,main]) completed. Took 0.0 secs.
+Settings evaluated using settings file '/Users/ice/Desktop/atlas/settings.gradle'.
+Projects loaded. Root project using build file '/Users/ice/Desktop/atlas/build.gradle'.
+Included projects: [root project 'atlas', project ':activitygroupcompat', project ':app', project ':apt', project ':buildsrc', project ':ice', project ':lib']
+
+> Configure project :
+Evaluating root project 'atlas' using build file '/Users/ice/Desktop/atlas/build.gradle'.
+
+> Configure project :activitygroupcompat
+Evaluating project ':activitygroupcompat' using build file '/Users/ice/Desktop/atlas/activitygroupcompat/build.gradle'.
+Creating configuration androidTestUtil
+Creating configuration compile
+Creating configuration publish
+Creating configuration provided
+Creating configuration api
+Creating configuration implementation
+Creating configuration runtimeOnly
+Creating configuration compileOnly
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestPublish
+Creating configuration androidTestProvided
+Creating configuration androidTestApi
+Creating configuration androidTestImplementation
+Creating configuration androidTestRuntimeOnly
+Creating configuration androidTestCompileOnly
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testPublish
+Creating configuration testProvided
+Creating configuration testApi
+Creating configuration testImplementation
+Creating configuration testRuntimeOnly
+Creating configuration testCompileOnly
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugPublish
+Creating configuration debugProvided
+Creating configuration debugApi
+Creating configuration debugImplementation
+Creating configuration debugRuntimeOnly
+Creating configuration debugCompileOnly
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration androidTestDebugCompile
+Creating configuration androidTestDebugPublish
+Creating configuration androidTestDebugProvided
+Creating configuration androidTestDebugApi
+Creating configuration androidTestDebugImplementation
+Creating configuration androidTestDebugRuntimeOnly
+Creating configuration androidTestDebugCompileOnly
+Creating configuration androidTestDebugWearApp
+Creating configuration androidTestDebugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugPublish
+Creating configuration testDebugProvided
+Creating configuration testDebugApi
+Creating configuration testDebugImplementation
+Creating configuration testDebugRuntimeOnly
+Creating configuration testDebugCompileOnly
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releasePublish
+Creating configuration releaseProvided
+Creating configuration releaseApi
+Creating configuration releaseImplementation
+Creating configuration releaseRuntimeOnly
+Creating configuration releaseCompileOnly
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleasePublish
+Creating configuration testReleaseProvided
+Creating configuration testReleaseApi
+Creating configuration testReleaseImplementation
+Creating configuration testReleaseRuntimeOnly
+Creating configuration testReleaseCompileOnly
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+Configuration 'compile' in project ':activitygroupcompat' is deprecated. Use 'implementation' instead.
+Parsing the SDK, no caching allowed
+Parsing /Users/ice/Library/Android/sdk/build-tools/26.0.2/package.xml
+Parsing /Users/ice/Library/Android/sdk/build-tools/26.0.3/package.xml
+Parsing /Users/ice/Library/Android/sdk/build-tools/27.0.3/package.xml
+Parsing /Users/ice/Library/Android/sdk/emulator/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/android/m2repository/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/google/m2repository/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/intel/Hardware_Accelerated_Execution_Manager/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-alpha8/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout/1.0.0/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout/1.0.0-alpha8/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout/1.0.2/package.xml
+Parsing /Users/ice/Library/Android/sdk/patcher/v4/package.xml
+Parsing /Users/ice/Library/Android/sdk/platform-tools/package.xml
+Parsing /Users/ice/Library/Android/sdk/platforms/android-25/package.xml
+Parsing /Users/ice/Library/Android/sdk/platforms/android-26/package.xml
+Parsing /Users/ice/Library/Android/sdk/platforms/android-27/package.xml
+Parsing /Users/ice/Library/Android/sdk/sources/android-27/package.xml
+Parsing /Users/ice/Library/Android/sdk/system-images/android-26/google_apis/x86_64/package.xml
+Parsing /Users/ice/Library/Android/sdk/tools/package.xml
+Parsing /Users/ice/Library/Android/sdk/build-tools/26.0.2/package.xml
+Parsing /Users/ice/Library/Android/sdk/build-tools/26.0.3/package.xml
+Parsing /Users/ice/Library/Android/sdk/build-tools/27.0.3/package.xml
+Parsing /Users/ice/Library/Android/sdk/emulator/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/android/m2repository/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/google/m2repository/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/intel/Hardware_Accelerated_Execution_Manager/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-alpha8/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout/1.0.0/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout/1.0.0-alpha8/package.xml
+Parsing /Users/ice/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout/1.0.2/package.xml
+Parsing /Users/ice/Library/Android/sdk/patcher/v4/package.xml
+Parsing /Users/ice/Library/Android/sdk/platform-tools/package.xml
+Parsing /Users/ice/Library/Android/sdk/platforms/android-25/package.xml
+Parsing /Users/ice/Library/Android/sdk/platforms/android-26/package.xml
+Parsing /Users/ice/Library/Android/sdk/platforms/android-27/package.xml
+Parsing /Users/ice/Library/Android/sdk/sources/android-27/package.xml
+Parsing /Users/ice/Library/Android/sdk/system-images/android-26/google_apis/x86_64/package.xml
+Parsing /Users/ice/Library/Android/sdk/tools/package.xml
+SDK initialized in 233 ms
+Using incremental javac compilation for :activitygroupcompat debug.
+Using incremental javac compilation for :activitygroupcompat debugUnitTest.
+Using incremental javac compilation for :activitygroupcompat release.
+Using incremental javac compilation for :activitygroupcompat releaseUnitTest.
+Using incremental javac compilation for :activitygroupcompat debugAndroidTest.
+
+> Configure project :app
+Evaluating project ':app' using build file '/Users/ice/Desktop/atlas/app/build.gradle'.
+Creating configuration androidTestUtil
+Creating configuration compile
+Creating configuration apk
+Creating configuration provided
+Creating configuration api
+Creating configuration implementation
+Creating configuration runtimeOnly
+Creating configuration compileOnly
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestApk
+Creating configuration androidTestProvided
+Creating configuration androidTestApi
+Creating configuration androidTestImplementation
+Creating configuration androidTestRuntimeOnly
+Creating configuration androidTestCompileOnly
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testApk
+Creating configuration testProvided
+Creating configuration testApi
+Creating configuration testImplementation
+Creating configuration testRuntimeOnly
+Creating configuration testCompileOnly
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugApk
+Creating configuration debugProvided
+Creating configuration debugApi
+Creating configuration debugImplementation
+Creating configuration debugRuntimeOnly
+Creating configuration debugCompileOnly
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration androidTestDebugCompile
+Creating configuration androidTestDebugApk
+Creating configuration androidTestDebugProvided
+Creating configuration androidTestDebugApi
+Creating configuration androidTestDebugImplementation
+Creating configuration androidTestDebugRuntimeOnly
+Creating configuration androidTestDebugCompileOnly
+Creating configuration androidTestDebugWearApp
+Creating configuration androidTestDebugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugApk
+Creating configuration testDebugProvided
+Creating configuration testDebugApi
+Creating configuration testDebugImplementation
+Creating configuration testDebugRuntimeOnly
+Creating configuration testDebugCompileOnly
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releaseApk
+Creating configuration releaseProvided
+Creating configuration releaseApi
+Creating configuration releaseImplementation
+Creating configuration releaseRuntimeOnly
+Creating configuration releaseCompileOnly
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleaseApk
+Creating configuration testReleaseProvided
+Creating configuration testReleaseApi
+Creating configuration testReleaseImplementation
+Creating configuration testReleaseRuntimeOnly
+Creating configuration testReleaseCompileOnly
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+Configuration 'compile' in project ':app' is deprecated. Use 'implementation' instead.
+Creating configuration ceshiCompile
+Creating configuration ceshiApk
+Creating configuration ceshiProvided
+Creating configuration ceshiApi
+Creating configuration ceshiImplementation
+Creating configuration ceshiRuntimeOnly
+Creating configuration ceshiCompileOnly
+Creating configuration ceshiWearApp
+Creating configuration ceshiAnnotationProcessor
+Creating configuration androidTestCeshiCompile
+Creating configuration androidTestCeshiApk
+Creating configuration androidTestCeshiProvided
+Creating configuration androidTestCeshiApi
+Creating configuration androidTestCeshiImplementation
+Creating configuration androidTestCeshiRuntimeOnly
+Creating configuration androidTestCeshiCompileOnly
+Creating configuration androidTestCeshiWearApp
+Creating configuration androidTestCeshiAnnotationProcessor
+Creating configuration testCeshiCompile
+Creating configuration testCeshiApk
+Creating configuration testCeshiProvided
+Creating configuration testCeshiApi
+Creating configuration testCeshiImplementation
+Creating configuration testCeshiRuntimeOnly
+Creating configuration testCeshiCompileOnly
+Creating configuration testCeshiWearApp
+Creating configuration testCeshiAnnotationProcessor
+Creating configuration HuaweiCompile
+Creating configuration HuaweiApk
+Creating configuration HuaweiProvided
+Creating configuration HuaweiApi
+Creating configuration HuaweiImplementation
+Creating configuration HuaweiRuntimeOnly
+Creating configuration HuaweiCompileOnly
+Creating configuration HuaweiWearApp
+Creating configuration HuaweiAnnotationProcessor
+Creating configuration androidTestHuaweiCompile
+Creating configuration androidTestHuaweiApk
+Creating configuration androidTestHuaweiProvided
+Creating configuration androidTestHuaweiApi
+Creating configuration androidTestHuaweiImplementation
+Creating configuration androidTestHuaweiRuntimeOnly
+Creating configuration androidTestHuaweiCompileOnly
+Creating configuration androidTestHuaweiWearApp
+Creating configuration androidTestHuaweiAnnotationProcessor
+Creating configuration testHuaweiCompile
+Creating configuration testHuaweiApk
+Creating configuration testHuaweiProvided
+Creating configuration testHuaweiApi
+Creating configuration testHuaweiImplementation
+Creating configuration testHuaweiRuntimeOnly
+Creating configuration testHuaweiCompileOnly
+Creating configuration testHuaweiWearApp
+Creating configuration testHuaweiAnnotationProcessor
+========================
+Aspectj切片开始编织Class!
+========================
+Parsing the SDK, no caching allowed
+SDK initialized in 0 ms
+Creating configuration ceshiDebugCompile
+Creating configuration ceshiDebugApk
+Creating configuration ceshiDebugProvided
+Creating configuration ceshiDebugApi
+Creating configuration ceshiDebugImplementation
+Creating configuration ceshiDebugRuntimeOnly
+Creating configuration ceshiDebugCompileOnly
+Creating configuration ceshiDebugWearApp
+Creating configuration ceshiDebugAnnotationProcessor
+Creating configuration testCeshiDebugCompile
+Creating configuration testCeshiDebugApk
+Creating configuration testCeshiDebugProvided
+Creating configuration testCeshiDebugApi
+Creating configuration testCeshiDebugImplementation
+Creating configuration testCeshiDebugRuntimeOnly
+Creating configuration testCeshiDebugCompileOnly
+Creating configuration testCeshiDebugWearApp
+Creating configuration testCeshiDebugAnnotationProcessor
+Creating configuration ceshiReleaseCompile
+Creating configuration ceshiReleaseApk
+Creating configuration ceshiReleaseProvided
+Creating configuration ceshiReleaseApi
+Creating configuration ceshiReleaseImplementation
+Creating configuration ceshiReleaseRuntimeOnly
+Creating configuration ceshiReleaseCompileOnly
+Creating configuration ceshiReleaseWearApp
+Creating configuration ceshiReleaseAnnotationProcessor
+Creating configuration testCeshiReleaseCompile
+Creating configuration testCeshiReleaseApk
+Creating configuration testCeshiReleaseProvided
+Creating configuration testCeshiReleaseApi
+Creating configuration testCeshiReleaseImplementation
+Creating configuration testCeshiReleaseRuntimeOnly
+Creating configuration testCeshiReleaseCompileOnly
+Creating configuration testCeshiReleaseWearApp
+Creating configuration testCeshiReleaseAnnotationProcessor
+Creating configuration androidTestCeshiDebugCompile
+Creating configuration androidTestCeshiDebugApk
+Creating configuration androidTestCeshiDebugProvided
+Creating configuration androidTestCeshiDebugApi
+Creating configuration androidTestCeshiDebugImplementation
+Creating configuration androidTestCeshiDebugRuntimeOnly
+Creating configuration androidTestCeshiDebugCompileOnly
+Creating configuration androidTestCeshiDebugWearApp
+Creating configuration androidTestCeshiDebugAnnotationProcessor
+Creating configuration HuaweiDebugCompile
+Creating configuration HuaweiDebugApk
+Creating configuration HuaweiDebugProvided
+Creating configuration HuaweiDebugApi
+Creating configuration HuaweiDebugImplementation
+Creating configuration HuaweiDebugRuntimeOnly
+Creating configuration HuaweiDebugCompileOnly
+Creating configuration HuaweiDebugWearApp
+Creating configuration HuaweiDebugAnnotationProcessor
+Creating configuration testHuaweiDebugCompile
+Creating configuration testHuaweiDebugApk
+Creating configuration testHuaweiDebugProvided
+Creating configuration testHuaweiDebugApi
+Creating configuration testHuaweiDebugImplementation
+Creating configuration testHuaweiDebugRuntimeOnly
+Creating configuration testHuaweiDebugCompileOnly
+Creating configuration testHuaweiDebugWearApp
+Creating configuration testHuaweiDebugAnnotationProcessor
+Creating configuration HuaweiReleaseCompile
+Creating configuration HuaweiReleaseApk
+Creating configuration HuaweiReleaseProvided
+Creating configuration HuaweiReleaseApi
+Creating configuration HuaweiReleaseImplementation
+Creating configuration HuaweiReleaseRuntimeOnly
+Creating configuration HuaweiReleaseCompileOnly
+Creating configuration HuaweiReleaseWearApp
+Creating configuration HuaweiReleaseAnnotationProcessor
+Creating configuration testHuaweiReleaseCompile
+Creating configuration testHuaweiReleaseApk
+Creating configuration testHuaweiReleaseProvided
+Creating configuration testHuaweiReleaseApi
+Creating configuration testHuaweiReleaseImplementation
+Creating configuration testHuaweiReleaseRuntimeOnly
+Creating configuration testHuaweiReleaseCompileOnly
+Creating configuration testHuaweiReleaseWearApp
+Creating configuration testHuaweiReleaseAnnotationProcessor
+Creating configuration androidTestHuaweiDebugCompile
+Creating configuration androidTestHuaweiDebugApk
+Creating configuration androidTestHuaweiDebugProvided
+Creating configuration androidTestHuaweiDebugApi
+Creating configuration androidTestHuaweiDebugImplementation
+Creating configuration androidTestHuaweiDebugRuntimeOnly
+Creating configuration androidTestHuaweiDebugCompileOnly
+Creating configuration androidTestHuaweiDebugWearApp
+Creating configuration androidTestHuaweiDebugAnnotationProcessor
+Using incremental javac compilation for :app ceshiDebug.
+Using incremental javac compilation for :app ceshiDebugUnitTest.
+Using incremental javac compilation for :app ceshiRelease.
+Using incremental javac compilation for :app ceshiReleaseUnitTest.
+Using incremental javac compilation for :app ceshiDebugAndroidTest.
+Using incremental javac compilation for :app HuaweiDebug.
+Using incremental javac compilation for :app HuaweiDebugUnitTest.
+Using incremental javac compilation for :app HuaweiRelease.
+Using incremental javac compilation for :app HuaweiReleaseUnitTest.
+Using incremental javac compilation for :app HuaweiDebugAndroidTest.
+Creating new cache for metadata-2.23/module-artifacts, path /Users/ice/.gradle/caches/modules-2/metadata-2.23/module-artifacts.bin, access org.gradle.cache.internal.DefaultCacheAccess@152868ba
+com.taobao.android:atlasupdate:1.1.4.5
+ com.taobao.android:atlas_core:5.0.6-rc21
+[dependencyTreeceshiDebug] {
+        "awbs":{},
+        "mainDex":[
+                "org.aspectj:aspectjrt:1.8.10@jar",
+                "com.taobao.android:atlasupdate:1.1.4.5@aar",
+                "com.taobao.android:atlas_core:5.0.6-rc21@aar"
+        ]
+}
+[dependencyTreeceshiDebugUnitTest] {
+        "awbs":{},
+        "mainDex":[]
+}
+com.taobao.android:atlasupdate:1.1.4.5
+ com.taobao.android:atlas_core:5.0.6-rc21
+[dependencyTreeceshiRelease] {
+        "awbs":{},
+        "mainDex":[
+                "org.aspectj:aspectjrt:1.8.10@jar",
+                "com.taobao.android:atlasupdate:1.1.4.5@aar",
+                "com.taobao.android:atlas_core:5.0.6-rc21@aar"
+        ]
+}
+[dependencyTreeceshiReleaseUnitTest] {
+        "awbs":{},
+        "mainDex":[]
+}
+[dependencyTreeceshiDebugAndroidTest] {
+        "awbs":{},
+        "mainDex":[]
+}
+com.taobao.android:atlasupdate:1.1.4.5
+ com.taobao.android:atlas_core:5.0.6-rc21
+[dependencyTreeHuaweiDebug] {
+        "awbs":{},
+        "mainDex":[
+                "org.aspectj:aspectjrt:1.8.10@jar",
+                "com.taobao.android:atlasupdate:1.1.4.5@aar",
+                "com.taobao.android:atlas_core:5.0.6-rc21@aar"
+        ]
+}
+[dependencyTreeHuaweiDebugUnitTest] {
+        "awbs":{},
+        "mainDex":[]
+}
+com.taobao.android:atlasupdate:1.1.4.5
+ com.taobao.android:atlas_core:5.0.6-rc21
+[dependencyTreeHuaweiRelease] {
+        "awbs":{},
+        "mainDex":[
+                "org.aspectj:aspectjrt:1.8.10@jar",
+                "com.taobao.android:atlasupdate:1.1.4.5@aar",
+                "com.taobao.android:atlas_core:5.0.6-rc21@aar"
+        ]
+}
+[dependencyTreeHuaweiReleaseUnitTest] {
+        "awbs":{},
+        "mainDex":[]
+}
+[dependencyTreeHuaweiDebugAndroidTest] {
+        "awbs":{},
+        "mainDex":[]
+}
+[tasks] set task app:buildCeshiDebugatlasEnv->app:preCeshiDebugBuild
+[tasks] set task app:logCeshiDebugDependencies->app:buildCeshiDebugatlasEnv
+[tasks] set task app:prepareCeshiDebugAP->app:logCeshiDebugDependencies
+[tasks] set task app:mergeCeshiDebugAssets->app:prepareCeshiDebugAP
+task is not found ceshi-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.RenderscriptCompile, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:standardizeCeshiDebugLibManifest->app:mergeCeshiDebugAssets
+[tasks] set task app:prepareBundleInfoCeshiDebug->app:standardizeCeshiDebugLibManifest
+[tasks] set task app:generateCeshiDebugAtlasSources->app:prepareBundleInfoCeshiDebug
+[tasks] set task app:prepareCeshiDebugpackageIds->app:generateCeshiDebugAtlasSources
+[tasks] set task app:prepareCeshiDebugAapt->app:prepareCeshiDebugpackageIds
+task is not found ceshi-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.AidlCompile, taskActionClazz=null, taskName='null', taskFilter=null}
+task is not found ceshi-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.GenerateBuildConfig, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:mergeResCeshiDebugAwbs->app:prepareCeshiDebugAapt
+[tasks] set task app:mergeAssertsCeshiDebugAwbs->app:mergeResCeshiDebugAwbs
+task is not found ceshi-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.MergeManifests, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:mergeManifestCeshiDebugAwbs->app:mergeAssertsCeshiDebugAwbs
+task is not found ceshi-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.ProcessAndroidResources, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:processResAwbsCeshiDebug->app:mergeManifestCeshiDebugAwbs
+[tasks] set task app:javacAwbsCeshiDebug->app:processResAwbsCeshiDebug
+task is not found ceshi-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.internal.pipeline.TransformTask, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:packageCeshiDebugAwbs->app:javacAwbsCeshiDebug
+task is not found ceshi-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.PackageApplication, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:createCeshiDebugAp->app:packageCeshiDebugAwbs
+[tasks] set task app:diffBundleInfoCeshiDebug->app:createCeshiDebugAp
+[tasks] set task app:processDiffResourcesCeshiDebug->app:diffBundleInfoCeshiDebug
+[tasks] set task app:createTPatchDiffApkCeshiDebug->app:processDiffResourcesCeshiDebug
+[tasks] set task app:createTPatchCeshiDebug->app:createTPatchDiffApkCeshiDebug
+[tasks] set task app:assembleCeshiDebug->app:createTPatchCeshiDebug
+[tasks] set task app:buildCeshiReleaseatlasEnv->app:preCeshiReleaseBuild
+[tasks] set task app:logCeshiReleaseDependencies->app:buildCeshiReleaseatlasEnv
+[tasks] set task app:prepareCeshiReleaseAP->app:logCeshiReleaseDependencies
+[tasks] set task app:mergeCeshiReleaseAssets->app:prepareCeshiReleaseAP
+task is not found ceshi-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.RenderscriptCompile, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:standardizeCeshiReleaseLibManifest->app:mergeCeshiReleaseAssets
+[tasks] set task app:prepareBundleInfoCeshiRelease->app:standardizeCeshiReleaseLibManifest
+[tasks] set task app:generateCeshiReleaseAtlasSources->app:prepareBundleInfoCeshiRelease
+[tasks] set task app:prepareCeshiReleasepackageIds->app:generateCeshiReleaseAtlasSources
+[tasks] set task app:prepareCeshiReleaseAapt->app:prepareCeshiReleasepackageIds
+task is not found ceshi-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.AidlCompile, taskActionClazz=null, taskName='null', taskFilter=null}
+task is not found ceshi-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.GenerateBuildConfig, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:mergeResCeshiReleaseAwbs->app:prepareCeshiReleaseAapt
+[tasks] set task app:mergeAssertsCeshiReleaseAwbs->app:mergeResCeshiReleaseAwbs
+task is not found ceshi-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.MergeManifests, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:mergeManifestCeshiReleaseAwbs->app:mergeAssertsCeshiReleaseAwbs
+task is not found ceshi-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.ProcessAndroidResources, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:processResAwbsCeshiRelease->app:mergeManifestCeshiReleaseAwbs
+[tasks] set task app:javacAwbsCeshiRelease->app:processResAwbsCeshiRelease
+task is not found ceshi-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.internal.pipeline.TransformTask, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:packageCeshiReleaseAwbs->app:javacAwbsCeshiRelease
+task is not found ceshi-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.PackageApplication, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:createCeshiReleaseAp->app:packageCeshiReleaseAwbs
+[tasks] set task app:diffBundleInfoCeshiRelease->app:createCeshiReleaseAp
+[tasks] set task app:processDiffResourcesCeshiRelease->app:diffBundleInfoCeshiRelease
+[tasks] set task app:createTPatchDiffApkCeshiRelease->app:processDiffResourcesCeshiRelease
+[tasks] set task app:createTPatchCeshiRelease->app:createTPatchDiffApkCeshiRelease
+[tasks] set task app:assembleCeshiRelease->app:createTPatchCeshiRelease
+[tasks] set task app:buildHuaweiDebugatlasEnv->app:preHuaweiDebugBuild
+[tasks] set task app:logHuaweiDebugDependencies->app:buildHuaweiDebugatlasEnv
+[tasks] set task app:prepareHuaweiDebugAP->app:logHuaweiDebugDependencies
+[tasks] set task app:mergeHuaweiDebugAssets->app:prepareHuaweiDebugAP
+task is not found Huawei-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.RenderscriptCompile, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:standardizeHuaweiDebugLibManifest->app:mergeHuaweiDebugAssets
+[tasks] set task app:prepareBundleInfoHuaweiDebug->app:standardizeHuaweiDebugLibManifest
+[tasks] set task app:generateHuaweiDebugAtlasSources->app:prepareBundleInfoHuaweiDebug
+[tasks] set task app:prepareHuaweiDebugpackageIds->app:generateHuaweiDebugAtlasSources
+[tasks] set task app:prepareHuaweiDebugAapt->app:prepareHuaweiDebugpackageIds
+task is not found Huawei-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.AidlCompile, taskActionClazz=null, taskName='null', taskFilter=null}
+task is not found Huawei-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.GenerateBuildConfig, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:mergeResHuaweiDebugAwbs->app:prepareHuaweiDebugAapt
+[tasks] set task app:mergeAssertsHuaweiDebugAwbs->app:mergeResHuaweiDebugAwbs
+task is not found Huawei-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.MergeManifests, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:mergeManifestHuaweiDebugAwbs->app:mergeAssertsHuaweiDebugAwbs
+task is not found Huawei-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.ProcessAndroidResources, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:processResAwbsHuaweiDebug->app:mergeManifestHuaweiDebugAwbs
+[tasks] set task app:javacAwbsHuaweiDebug->app:processResAwbsHuaweiDebug
+task is not found Huawei-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.internal.pipeline.TransformTask, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:packageHuaweiDebugAwbs->app:javacAwbsHuaweiDebug
+task is not found Huawei-debugMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.PackageApplication, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:createHuaweiDebugAp->app:packageHuaweiDebugAwbs
+[tasks] set task app:diffBundleInfoHuaweiDebug->app:createHuaweiDebugAp
+[tasks] set task app:processDiffResourcesHuaweiDebug->app:diffBundleInfoHuaweiDebug
+[tasks] set task app:createTPatchDiffApkHuaweiDebug->app:processDiffResourcesHuaweiDebug
+[tasks] set task app:createTPatchHuaweiDebug->app:createTPatchDiffApkHuaweiDebug
+[tasks] set task app:assembleHuaweiDebug->app:createTPatchHuaweiDebug
+[tasks] set task app:buildHuaweiReleaseatlasEnv->app:preHuaweiReleaseBuild
+[tasks] set task app:logHuaweiReleaseDependencies->app:buildHuaweiReleaseatlasEnv
+[tasks] set task app:prepareHuaweiReleaseAP->app:logHuaweiReleaseDependencies
+[tasks] set task app:mergeHuaweiReleaseAssets->app:prepareHuaweiReleaseAP
+task is not found Huawei-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.RenderscriptCompile, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:standardizeHuaweiReleaseLibManifest->app:mergeHuaweiReleaseAssets
+[tasks] set task app:prepareBundleInfoHuaweiRelease->app:standardizeHuaweiReleaseLibManifest
+[tasks] set task app:generateHuaweiReleaseAtlasSources->app:prepareBundleInfoHuaweiRelease
+[tasks] set task app:prepareHuaweiReleasepackageIds->app:generateHuaweiReleaseAtlasSources
+[tasks] set task app:prepareHuaweiReleaseAapt->app:prepareHuaweiReleasepackageIds
+task is not found Huawei-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.AidlCompile, taskActionClazz=null, taskName='null', taskFilter=null}
+task is not found Huawei-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.GenerateBuildConfig, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:mergeResHuaweiReleaseAwbs->app:prepareHuaweiReleaseAapt
+[tasks] set task app:mergeAssertsHuaweiReleaseAwbs->app:mergeResHuaweiReleaseAwbs
+task is not found Huawei-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.MergeManifests, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:mergeManifestHuaweiReleaseAwbs->app:mergeAssertsHuaweiReleaseAwbs
+task is not found Huawei-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.ProcessAndroidResources, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:processResAwbsHuaweiRelease->app:mergeManifestHuaweiReleaseAwbs
+[tasks] set task app:javacAwbsHuaweiRelease->app:processResAwbsHuaweiRelease
+task is not found Huawei-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.internal.pipeline.TransformTask, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:packageHuaweiReleaseAwbs->app:javacAwbsHuaweiRelease
+task is not found Huawei-releaseMtlTaskContext{isSystemTask=true, sysTaskClazz=class com.android.build.gradle.tasks.PackageApplication, taskActionClazz=null, taskName='null', taskFilter=null}
+[tasks] set task app:createHuaweiReleaseAp->app:packageHuaweiReleaseAwbs
+[tasks] set task app:diffBundleInfoHuaweiRelease->app:createHuaweiReleaseAp
+[tasks] set task app:processDiffResourcesHuaweiRelease->app:diffBundleInfoHuaweiRelease
+[tasks] set task app:createTPatchDiffApkHuaweiRelease->app:processDiffResourcesHuaweiRelease
+[tasks] set task app:createTPatchHuaweiRelease->app:createTPatchDiffApkHuaweiRelease
+[tasks] set task app:assembleHuaweiRelease->app:createTPatchHuaweiRelease
+
+> Configure project :apt
+Evaluating project ':apt' using build file '/Users/ice/Desktop/atlas/apt/build.gradle'.
+
+> Configure project :buildsrc
+Evaluating project ':buildsrc' using build file '/Users/ice/Desktop/atlas/buildsrc/build.gradle'.
+
+> Configure project :ice
+Evaluating project ':ice' using build file '/Users/ice/Desktop/atlas/ice/build.gradle'.
+Creating configuration androidTestUtil
+Creating configuration compile
+Creating configuration publish
+Creating configuration provided
+Creating configuration api
+Creating configuration implementation
+Creating configuration runtimeOnly
+Creating configuration compileOnly
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestPublish
+Creating configuration androidTestProvided
+Creating configuration androidTestApi
+Creating configuration androidTestImplementation
+Creating configuration androidTestRuntimeOnly
+Creating configuration androidTestCompileOnly
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testPublish
+Creating configuration testProvided
+Creating configuration testApi
+Creating configuration testImplementation
+Creating configuration testRuntimeOnly
+Creating configuration testCompileOnly
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugPublish
+Creating configuration debugProvided
+Creating configuration debugApi
+Creating configuration debugImplementation
+Creating configuration debugRuntimeOnly
+Creating configuration debugCompileOnly
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration androidTestDebugCompile
+Creating configuration androidTestDebugPublish
+Creating configuration androidTestDebugProvided
+Creating configuration androidTestDebugApi
+Creating configuration androidTestDebugImplementation
+Creating configuration androidTestDebugRuntimeOnly
+Creating configuration androidTestDebugCompileOnly
+Creating configuration androidTestDebugWearApp
+Creating configuration androidTestDebugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugPublish
+Creating configuration testDebugProvided
+Creating configuration testDebugApi
+Creating configuration testDebugImplementation
+Creating configuration testDebugRuntimeOnly
+Creating configuration testDebugCompileOnly
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releasePublish
+Creating configuration releaseProvided
+Creating configuration releaseApi
+Creating configuration releaseImplementation
+Creating configuration releaseRuntimeOnly
+Creating configuration releaseCompileOnly
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleasePublish
+Creating configuration testReleaseProvided
+Creating configuration testReleaseApi
+Creating configuration testReleaseImplementation
+Creating configuration testReleaseRuntimeOnly
+Creating configuration testReleaseCompileOnly
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+Configuration 'compile' in project ':ice' is deprecated. Use 'implementation' instead.
+Configuration 'androidTestCompile' in project ':ice' is deprecated. Use 'androidTestImplementation' instead.
+Configuration 'testCompile' in project ':ice' is deprecated. Use 'testImplementation' instead.
+========================
+Aspectj切片开始编织Class!
+========================
+Parsing the SDK, no caching allowed
+SDK initialized in 0 ms
+Using incremental javac compilation for :ice debug.
+Using incremental javac compilation for :ice debugUnitTest.
+Using incremental javac compilation for :ice release.
+Using incremental javac compilation for :ice releaseUnitTest.
+Using incremental javac compilation for :ice debugAndroidTest.
+
+> Configure project :lib
+Evaluating project ':lib' using build file '/Users/ice/Desktop/atlas/lib/build.gradle'.
+
+All projects evaluated.
+Selected primary task 'clean' from project :
+Selected primary task 'assembleDebug' from project :
+Creating new cache for annotation-processors, path /Users/ice/Desktop/atlas/.gradle/4.1/fileContent/annotation-processors.bin, access org.gradle.cache.internal.DefaultCacheAccess@5f908136
+Tasks to be executed: [task ':clean', task ':activitygroupcompat:clean', task ':app:clean', task ':apt:clean', task ':buildsrc:clean', task ':ice:clean', task ':lib:clean', task ':activitygroupcompat:preBuild', task ':activitygroupcompat:preDebugBuild', task ':activitygroupcompat:compileDebugAidl', task ':activitygroupcompat:compileDebugNdk', task ':activitygroupcompat:compileDebugRenderscript', task ':activitygroupcompat:checkDebugManifest', task ':activitygroupcompat:generateDebugBuildConfig', task ':activitygroupcompat:prepareLintJar', task ':activitygroupcompat:generateDebugResValues', task ':activitygroupcompat:generateDebugResources', task ':activitygroupcompat:packageDebugResources', task ':activitygroupcompat:platformAttrExtractor', task ':activitygroupcompat:processDebugManifest', task ':activitygroupcompat:processDebugResources', task ':activitygroupcompat:generateDebugSources', task ':activitygroupcompat:javaPreCompileDebug', task ':activitygroupcompat:compileDebugJavaWithJavac', task ':activitygroupcompat:extractDebugAnnotations', task ':activitygroupcompat:mergeDebugShaders', task ':activitygroupcompat:compileDebugShaders', task ':activitygroupcompat:generateDebugAssets', task ':activitygroupcompat:mergeDebugAssets', task ':activitygroupcompat:mergeDebugConsumerProguardFiles', task ':activitygroupcompat:packageDebugRenderscript', task ':activitygroupcompat:processDebugJavaRes', task ':activitygroupcompat:transformResourcesWithMergeJavaResForDebug', task ':activitygroupcompat:transformClassesAndResourcesWithSyncLibJarsForDebug', task ':activitygroupcompat:mergeDebugJniLibFolders', task ':activitygroupcompat:transformNativeLibsWithMergeJniLibsForDebug', task ':activitygroupcompat:transformNativeLibsWithSyncJniLibsForDebug', task ':activitygroupcompat:bundleDebug', task ':activitygroupcompat:compileDebugSources', task ':activitygroupcompat:assembleDebug', task ':app:preBuild', task ':app:preCeshiDebugBuild', task ':app:compileCeshiDebugAidl', task ':app:compileCeshiDebugRenderscript', task ':app:checkCeshiDebugManifest', task ':app:generateCeshiDebugBuildConfig', task ':app:prepareLintJar', task ':app:generateCeshiDebugResValues', task ':app:generateCeshiDebugResources', task ':app:mergeCeshiDebugResources', task ':app:createCeshiDebugCompatibleScreenManifests', task ':app:processCeshiDebugManifest', task ':app:splitsDiscoveryTaskCeshiDebug', task ':app:processCeshiDebugResources', task ':app:generateCeshiDebugSources', task ':app:javaPreCompileCeshiDebug', task ':app:compileCeshiDebugJavaWithJavac', task ':app:compileCeshiDebugNdk', task ':app:compileCeshiDebugSources', task ':app:mergeCeshiDebugShaders', task ':app:compileCeshiDebugShaders', task ':app:generateCeshiDebugAssets', task ':app:buildCeshiDebugatlasEnv', task ':app:logCeshiDebugDependencies', task ':app:prepareCeshiDebugAP', task ':app:mergeCeshiDebugAssets', task ':app:standardizeCeshiDebugLibManifest', task ':app:prepareBundleInfoCeshiDebug', task ':app:generateCeshiDebugAtlasSources', task ':app:prepareCeshiDebugpackageIds', task ':app:prepareCeshiDebugAapt', task ':app:mergeResCeshiDebugAwbs', task ':app:mergeAssertsCeshiDebugAwbs', task ':app:mergeManifestCeshiDebugAwbs', task ':app:processResAwbsCeshiDebug', task ':app:javacAwbsCeshiDebug', task ':app:packageCeshiDebugAwbs', task ':app:createCeshiDebugAp', task ':app:diffBundleInfoCeshiDebug', task ':app:processDiffResourcesCeshiDebug', task ':app:createTPatchDiffApkCeshiDebug', task ':app:createTPatchCeshiDebug', task ':app:transformClassesWithDexBuilderForCeshiDebug', task ':app:transformDexArchiveWithExternalLibsDexMergerForCeshiDebug', task ':app:transformDexArchiveWithDexMergerForCeshiDebug', task ':app:mergeCeshiDebugJniLibFolders', task ':app:transformNativeLibsWithMergeJniLibsForCeshiDebug', task ':app:processCeshiDebugJavaRes', task ':app:transformResourcesWithMergeJavaResForCeshiDebug', task ':app:validateSigningCeshiDebug', task ':app:packageCeshiDebug', task ':app:assembleCeshiDebug', task ':app:preHuaweiDebugBuild', task ':app:compileHuaweiDebugAidl', task ':app:compileHuaweiDebugRenderscript', task ':app:checkHuaweiDebugManifest', task ':app:generateHuaweiDebugBuildConfig', task ':app:generateHuaweiDebugResValues', task ':app:generateHuaweiDebugResources', task ':app:mergeHuaweiDebugResources', task ':app:createHuaweiDebugCompatibleScreenManifests', task ':app:processHuaweiDebugManifest', task ':app:splitsDiscoveryTaskHuaweiDebug', task ':app:processHuaweiDebugResources', task ':app:generateHuaweiDebugSources', task ':app:javaPreCompileHuaweiDebug', task ':app:compileHuaweiDebugJavaWithJavac', task ':app:compileHuaweiDebugNdk', task ':app:compileHuaweiDebugSources', task ':app:mergeHuaweiDebugShaders', task ':app:compileHuaweiDebugShaders', task ':app:generateHuaweiDebugAssets', task ':app:buildHuaweiDebugatlasEnv', task ':app:logHuaweiDebugDependencies', task ':app:prepareHuaweiDebugAP', task ':app:mergeHuaweiDebugAssets', task ':app:standardizeHuaweiDebugLibManifest', task ':app:prepareBundleInfoHuaweiDebug', task ':app:generateHuaweiDebugAtlasSources', task ':app:prepareHuaweiDebugpackageIds', task ':app:prepareHuaweiDebugAapt', task ':app:mergeResHuaweiDebugAwbs', task ':app:mergeAssertsHuaweiDebugAwbs', task ':app:mergeManifestHuaweiDebugAwbs', task ':app:processResAwbsHuaweiDebug', task ':app:javacAwbsHuaweiDebug', task ':app:packageHuaweiDebugAwbs', task ':app:createHuaweiDebugAp', task ':app:diffBundleInfoHuaweiDebug', task ':app:processDiffResourcesHuaweiDebug', task ':app:createTPatchDiffApkHuaweiDebug', task ':app:createTPatchHuaweiDebug', task ':app:transformClassesWithDexBuilderForHuaweiDebug', task ':app:transformDexArchiveWithExternalLibsDexMergerForHuaweiDebug', task ':app:transformDexArchiveWithDexMergerForHuaweiDebug', task ':app:mergeHuaweiDebugJniLibFolders', task ':app:transformNativeLibsWithMergeJniLibsForHuaweiDebug', task ':app:processHuaweiDebugJavaRes', task ':app:transformResourcesWithMergeJavaResForHuaweiDebug', task ':app:validateSigningHuaweiDebug', task ':app:packageHuaweiDebug', task ':app:assembleHuaweiDebug', task ':app:assembleDebug', task ':ice:preBuild', task ':ice:preDebugBuild', task ':ice:compileDebugAidl', task ':ice:compileDebugNdk', task ':lib:compileJava', task ':lib:processResources', task ':lib:classes', task ':lib:jar', task ':apt:compileJava', task ':apt:processResources', task ':apt:classes', task ':apt:jar', task ':ice:compileDebugRenderscript', task ':ice:checkDebugManifest', task ':ice:generateDebugBuildConfig', task ':ice:prepareLintJar', task ':ice:generateDebugResValues', task ':ice:generateDebugResources', task ':ice:packageDebugResources', task ':ice:platformAttrExtractor', task ':ice:processDebugManifest', task ':ice:processDebugResources', task ':ice:generateDebugSources', task ':ice:javaPreCompileDebug', task ':ice:compileDebugJavaWithJavac', task ':ice:extractDebugAnnotations', task ':ice:mergeDebugShaders', task ':ice:compileDebugShaders', task ':ice:generateDebugAssets', task ':ice:mergeDebugAssets', task ':ice:mergeDebugConsumerProguardFiles', task ':ice:packageDebugRenderscript', task ':ice:processDebugJavaRes', task ':ice:transformResourcesWithMergeJavaResForDebug', task ':ice:transformClassesAndResourcesWithSyncLibJarsForDebug', task ':ice:mergeDebugJniLibFolders', task ':ice:transformNativeLibsWithMergeJniLibsForDebug', task ':ice:transformNativeLibsWithSyncJniLibsForDebug', task ':ice:bundleDebug', task ':ice:compileDebugSources', task ':ice:assembleDebug']
+Creating new cache for fileSnapshots, path /Users/ice/Desktop/atlas/.gradle/4.1/taskHistory/fileSnapshots.bin, access org.gradle.cache.internal.DefaultCacheAccess@463de286
+Creating new cache for taskHistory, path /Users/ice/Desktop/atlas/.gradle/4.1/taskHistory/taskHistory.bin, access org.gradle.cache.internal.DefaultCacheAccess@463de286
+:clean (Thread[Task worker for ':',5,main]) started.
+:activitygroupcompat:clean (Thread[Task worker for ':' Thread 3,5,main]) started.
+:app:clean (Thread[Task worker for ':' Thread 5,5,main]) started.
+:apt:clean (Thread[Task worker for ':' Thread 7,5,main]) started.
+:buildsrc:clean (Thread[Task worker for ':' Thread 4,5,main]) started.
+:ice:clean (Thread[Task worker for ':' Thread 2,5,main]) started.
+:lib:clean (Thread[Task worker for ':' Thread 6,5,main]) started.
+
+> Task :clean
+Putting task artifact state for task ':clean' into context took 0.0 secs.
+Executing task ':clean' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+
+:clean (Thread[Task worker for ':',5,main]) completed. Took 0.015 secs.
+
+> Task :buildsrc:clean
+Putting task artifact state for task ':buildsrc:clean' into context took 0.0 secs.
+Executing task ':buildsrc:clean' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+
+:buildsrc:clean (Thread[Task worker for ':' Thread 4,5,main]) completed. Took 0.015 secs.
+
+> Task :apt:clean
+Putting task artifact state for task ':apt:clean' into context took 0.0 secs.
+Executing task ':apt:clean' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+
+:apt:clean (Thread[Task worker for ':' Thread 7,5,main]) completed. Took 0.015 secs.
+:apt:processResources (Thread[Task worker for ':' Thread 7,5,main]) started.
+
+> Task :lib:clean
+Putting task artifact state for task ':lib:clean' into context took 0.0 secs.
+Executing task ':lib:clean' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+
+:lib:clean (Thread[Task worker for ':' Thread 6,5,main]) completed. Took 0.015 secs.
+:lib:compileJava (Thread[Task worker for ':' Thread 6,5,main]) started.
+
+> Task :apt:processResources
+Putting task artifact state for task ':apt:processResources' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/apt/src/main/resources', not found
+Skipping task ':apt:processResources' as it has no source files and no previous output files.
+
+:apt:processResources (Thread[Task worker for ':' Thread 7,5,main]) completed. Took 0.001 secs.
+
+> Task :activitygroupcompat:clean
+Putting task artifact state for task ':activitygroupcompat:clean' into context took 0.0 secs.
+Executing task ':activitygroupcompat:clean' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+
+:activitygroupcompat:clean (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.025 secs.
+:activitygroupcompat:preBuild (Thread[Task worker for ':' Thread 3,5,main]) started.
+
+> Task :activitygroupcompat:preBuild
+Skipping task ':activitygroupcompat:preBuild' as it has no actions.
+
+:activitygroupcompat:preBuild (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.001 secs.
+:activitygroupcompat:preDebugBuild (Thread[Task worker for ':' Thread 3,5,main]) started.
+
+> Task :activitygroupcompat:preDebugBuild
+Skipping task ':activitygroupcompat:preDebugBuild' as it has no actions.
+
+:activitygroupcompat:preDebugBuild (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.0 secs.
+:activitygroupcompat:compileDebugAidl (Thread[Task worker for ':' Thread 3,5,main]) started.
+
+> Task :ice:clean
+Putting task artifact state for task ':ice:clean' into context took 0.0 secs.
+Executing task ':ice:clean' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+
+:ice:clean (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.034 secs.
+:ice:preBuild (Thread[Task worker for ':' Thread 2,5,main]) started.
+
+> Task :ice:preBuild
+Skipping task ':ice:preBuild' as it has no actions.
+
+:ice:preBuild (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.0 secs.
+:ice:preDebugBuild (Thread[Task worker for ':' Thread 2,5,main]) started.
+
+> Task :ice:preDebugBuild
+Skipping task ':ice:preDebugBuild' as it has no actions.
+
+:ice:preDebugBuild (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.0 secs.
+
+> Task :app:clean
+Putting task artifact state for task ':app:clean' into context took 0.0 secs.
+Executing task ':app:clean' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+
+:ice:compileDebugAidl (Thread[Task worker for ':' Thread 2,5,main]) started.
+:app:clean (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.037 secs.
+:app:preBuild (Thread[Task worker for ':' Thread 5,5,main]) started.
+
+> Task :app:preBuild
+Skipping task ':app:preBuild' as it has no actions.
+
+:app:preBuild (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:app:preCeshiDebugBuild (Thread[Task worker for ':' Thread 5,5,main]) started.
+
+> Task :app:preCeshiDebugBuild
+Putting task artifact state for task ':app:preCeshiDebugBuild' into context took 0.0 secs.
+Executing task ':app:preCeshiDebugBuild' (up-to-date check took 0.003 secs) due to:
+  Output property 'fakeOutputDirectory' file /Users/ice/Desktop/atlas/app/build/intermediates/prebuild/ceshi/debug has changed.
+
+:app:preCeshiDebugBuild (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.006 secs.
+:app:compileCeshiDebugAidl (Thread[Task worker for ':' Thread 5,5,main]) started.
+
+> Task :lib:compileJava
+Putting task artifact state for task ':lib:compileJava' into context took 0.0 secs.
+Executing task ':lib:compileJava' (up-to-date check took 0.005 secs) due to:
+  Output property 'destinationDir' file /Users/ice/Desktop/atlas/lib/build/classes/java/main has changed.
+  Output property 'destinationDir' file /Users/ice/Desktop/atlas/lib/build/classes/java/main/com has been removed.
+  Output property 'destinationDir' file /Users/ice/Desktop/atlas/lib/build/classes/java/main/com/app has been removed.
+All input files are considered out-of-date for incremental task ':lib:compileJava'.
+Compiling with JDK Java compiler API.
+警告: [options] 未与 -source 1.7 一起设置引导类路径
+1 个警告
+
+:lib:compileJava (Thread[Task worker for ':' Thread 6,5,main]) completed. Took 0.037 secs.
+:lib:processResources (Thread[Task worker for ':' Thread 6,5,main]) started.
+
+> Task :lib:processResources
+Putting task artifact state for task ':lib:processResources' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/lib/src/main/resources', not found
+Skipping task ':lib:processResources' as it has no source files and no previous output files.
+
+:lib:processResources (Thread[Task worker for ':' Thread 6,5,main]) completed. Took 0.0 secs.
+:lib:classes (Thread[Task worker for ':' Thread 6,5,main]) started.
+
+> Task :lib:classes
+Skipping task ':lib:classes' as it has no actions.
+
+:lib:classes (Thread[Task worker for ':' Thread 6,5,main]) completed. Took 0.0 secs.
+:lib:jar (Thread[Task worker for ':' Thread 6,5,main]) started.
+
+> Task :app:compileCeshiDebugAidl
+Putting task artifact state for task ':app:compileCeshiDebugAidl' into context took 0.0 secs.
+Executing task ':app:compileCeshiDebugAidl' (up-to-date check took 0.001 secs) due to:
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/app/build/intermediates/incremental/compileCeshiDebugAidl has changed.
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/app/build/intermediates/incremental/compileCeshiDebugAidl/dependency.store has been removed.
+  Output property 'sourceOutputDir' file /Users/ice/Desktop/atlas/app/build/generated/source/aidl/ceshi/debug has changed.
+All input files are considered out-of-date for incremental task ':app:compileCeshiDebugAidl'.
+Unable do incremental execution: full task run
+
+:app:compileCeshiDebugAidl (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.018 secs.
+:app:compileCeshiDebugRenderscript (Thread[Task worker for ':' Thread 5,5,main]) started.
+
+> Task :lib:jar
+Putting task artifact state for task ':lib:jar' into context took 0.0 secs.
+Executing task ':lib:jar' (up-to-date check took 0.001 secs) due to:
+  Output property 'archivePath' file /Users/ice/Desktop/atlas/lib/build/libs/lib.jar has changed.
+
+:lib:jar (Thread[Task worker for ':' Thread 6,5,main]) completed. Took 0.009 secs.
+:apt:compileJava (Thread[Task worker for ':' Thread 6,5,main]) started.
+
+> Task :app:compileCeshiDebugRenderscript
+Putting task artifact state for task ':app:compileCeshiDebugRenderscript' into context took 0.0 secs.
+Executing task ':app:compileCeshiDebugRenderscript' (up-to-date check took 0.002 secs) due to:
+  Output property 'libOutputDir' file /Users/ice/Desktop/atlas/app/build/intermediates/rs/ceshi/debug/lib has changed.
+  Output property 'objOutputDir' file /Users/ice/Desktop/atlas/app/build/intermediates/rs/ceshi/debug/obj has changed.
+  Output property 'resOutputDir' file /Users/ice/Desktop/atlas/app/build/generated/res/rs/ceshi/debug has changed.
+
+:app:compileCeshiDebugRenderscript (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.016 secs.
+:app:checkCeshiDebugManifest (Thread[Task worker for ':' Thread 5,5,main]) started.
+
+> Task :activitygroupcompat:compileDebugAidl
+Putting task artifact state for task ':activitygroupcompat:compileDebugAidl' into context took 0.001 secs.
+file or directory '/Users/ice/Desktop/atlas/activitygroupcompat/libs', not found
+Executing task ':activitygroupcompat:compileDebugAidl' (up-to-date check took 0.035 secs) due to:
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/incremental/compileDebugAidl has changed.
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/incremental/compileDebugAidl/dependency.store has been removed.
+  Output property 'packagedDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/bundles/debug/aidl has changed.
+All input files are considered out-of-date for incremental task ':activitygroupcompat:compileDebugAidl'.
+Unable do incremental execution: full task run
+file or directory '/Users/ice/Desktop/atlas/activitygroupcompat/libs', not found
+
+:activitygroupcompat:compileDebugAidl (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.05 secs.
+:activitygroupcompat:compileDebugNdk (Thread[Task worker for ':' Thread 3,5,main]) started.
+
+> Task :activitygroupcompat:compileDebugNdk
+Putting task artifact state for task ':activitygroupcompat:compileDebugNdk' into context took 0.0 secs.
+Skipping task ':activitygroupcompat:compileDebugNdk' as it has no source files and no previous output files.
+
+:activitygroupcompat:compileDebugNdk (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.0 secs.
+:activitygroupcompat:compileDebugRenderscript (Thread[Task worker for ':' Thread 3,5,main]) started.
+
+> Task :app:checkCeshiDebugManifest
+Putting task artifact state for task ':app:checkCeshiDebugManifest' into context took 0.0 secs.
+Executing task ':app:checkCeshiDebugManifest' (up-to-date check took 0.0 secs) due to:
+  Output property 'fakeOutputDir' file /Users/ice/Desktop/atlas/app/build/intermediates/check-manifest/ceshi/debug has changed.
+
+:app:checkCeshiDebugManifest (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.004 secs.
+:app:generateCeshiDebugBuildConfig (Thread[Task worker for ':' Thread 5,5,main]) started.
+
+> Task :ice:compileDebugAidl
+Putting task artifact state for task ':ice:compileDebugAidl' into context took 0.0 secs.
+Creating new cache for metadata-2.23/module-versions, path /Users/ice/.gradle/caches/modules-2/metadata-2.23/module-versions.bin, access org.gradle.cache.internal.DefaultCacheAccess@152868ba
+file or directory '/Users/ice/Desktop/atlas/ice/libs', not found
+Executing task ':ice:compileDebugAidl' (up-to-date check took 0.037 secs) due to:
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/incremental/compileDebugAidl has changed.
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/incremental/compileDebugAidl/dependency.store has been removed.
+  Output property 'packagedDir' file /Users/ice/Desktop/atlas/ice/build/intermediates/bundles/debug/aidl has changed.
+All input files are considered out-of-date for incremental task ':ice:compileDebugAidl'.
+Unable do incremental execution: full task run
+file or directory '/Users/ice/Desktop/atlas/ice/libs', not found
+
+:ice:compileDebugAidl (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.053 secs.
+
+> Task :activitygroupcompat:compileDebugRenderscript
+Putting task artifact state for task ':activitygroupcompat:compileDebugRenderscript' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/activitygroupcompat/libs', not found
+Executing task ':activitygroupcompat:compileDebugRenderscript' (up-to-date check took 0.002 secs) due to:
+  Output property 'libOutputDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/rs/debug/lib has changed.
+  Output property 'objOutputDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/rs/debug/obj has changed.
+  Output property 'resOutputDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/generated/res/rs/debug has changed.
+file or directory '/Users/ice/Desktop/atlas/activitygroupcompat/libs', not found
+
+:ice:compileDebugNdk (Thread[Task worker for ':' Thread 2,5,main]) started.
+:activitygroupcompat:compileDebugRenderscript (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.009 secs.
+:activitygroupcompat:checkDebugManifest (Thread[Task worker for ':' Thread 3,5,main]) started.
+
+> Task :ice:compileDebugNdk
+Putting task artifact state for task ':ice:compileDebugNdk' into context took 0.001 secs.
+Skipping task ':ice:compileDebugNdk' as it has no source files and no previous output files.
+
+:ice:compileDebugNdk (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.001 secs.
+:ice:compileDebugRenderscript (Thread[Task worker for ':' Thread 2,5,main]) started.
+
+> Task :activitygroupcompat:checkDebugManifest
+Putting task artifact state for task ':activitygroupcompat:checkDebugManifest' into context took 0.0 secs.
+Executing task ':activitygroupcompat:checkDebugManifest' (up-to-date check took 0.0 secs) due to:
+  Output property 'fakeOutputDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/check-manifest/debug has changed.
+
+:activitygroupcompat:checkDebugManifest (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.003 secs.
+:activitygroupcompat:generateDebugBuildConfig (Thread[Task worker for ':' Thread 3,5,main]) started.
+
+> Task :ice:compileDebugRenderscript
+Putting task artifact state for task ':ice:compileDebugRenderscript' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/ice/libs', not found
+Executing task ':ice:compileDebugRenderscript' (up-to-date check took 0.001 secs) due to:
+  Output property 'libOutputDir' file /Users/ice/Desktop/atlas/ice/build/intermediates/rs/debug/lib has changed.
+  Output property 'objOutputDir' file /Users/ice/Desktop/atlas/ice/build/intermediates/rs/debug/obj has changed.
+  Output property 'resOutputDir' file /Users/ice/Desktop/atlas/ice/build/generated/res/rs/debug has changed.
+file or directory '/Users/ice/Desktop/atlas/ice/libs', not found
+
+:ice:compileDebugRenderscript (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.005 secs.
+:ice:checkDebugManifest (Thread[Task worker for ':' Thread 2,5,main]) started.
+
+> Task :ice:checkDebugManifest
+Putting task artifact state for task ':ice:checkDebugManifest' into context took 0.0 secs.
+Executing task ':ice:checkDebugManifest' (up-to-date check took 0.0 secs) due to:
+  Output property 'fakeOutputDir' file /Users/ice/Desktop/atlas/ice/build/intermediates/check-manifest/debug has changed.
+
+:ice:checkDebugManifest (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.001 secs.
+:ice:generateDebugBuildConfig (Thread[Task worker for ':' Thread 2,5,main]) started.
+
+> Task :app:generateCeshiDebugBuildConfig
+Putting task artifact state for task ':app:generateCeshiDebugBuildConfig' into context took 0.0 secs.
+Executing task ':app:generateCeshiDebugBuildConfig' (up-to-date check took 0.0 secs) due to:
+  Output property 'sourceOutputDir' file /Users/ice/Desktop/atlas/app/build/generated/source/buildConfig/ceshi/debug has changed.
+  Output property 'sourceOutputDir' file /Users/ice/Desktop/atlas/app/build/generated/source/buildConfig/ceshi/debug/com has been removed.
+  Output property 'sourceOutputDir' file /Users/ice/Desktop/atlas/app/build/generated/source/buildConfig/ceshi/debug/com/example has been removed.
+
+:app:generateCeshiDebugBuildConfig (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.027 secs.
+:app:prepareLintJar (Thread[Task worker for ':' Thread 5,5,main]) started.
+
+> Task :app:prepareLintJar
+Putting task artifact state for task ':app:prepareLintJar' into context took 0.0 secs.
+Skipping task ':app:prepareLintJar' as it is up-to-date (took 0.001 secs).
+
+:app:prepareLintJar (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.001 secs.
+:app:generateCeshiDebugResValues (Thread[Task worker for ':' Thread 5,5,main]) started.
+
+> Task :ice:generateDebugBuildConfig
+Putting task artifact state for task ':ice:generateDebugBuildConfig' into context took 0.0 secs.
+Executing task ':ice:generateDebugBuildConfig' (up-to-date check took 0.0 secs) due to:
+  Output property 'sourceOutputDir' file /Users/ice/Desktop/atlas/ice/build/generated/source/buildConfig/debug has changed.
+  Output property 'sourceOutputDir' file /Users/ice/Desktop/atlas/ice/build/generated/source/buildConfig/debug/com has been removed.
+  Output property 'sourceOutputDir' file /Users/ice/Desktop/atlas/ice/build/generated/source/buildConfig/debug/com/thinkwage has been removed.
+
+:ice:generateDebugBuildConfig (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.022 secs.
+:ice:prepareLintJar (Thread[Task worker for ':' Thread 2,5,main]) started.
+
+> Task :ice:prepareLintJar
+Putting task artifact state for task ':ice:prepareLintJar' into context took 0.0 secs.
+Skipping task ':ice:prepareLintJar' as it is up-to-date (took 0.0 secs).
+
+:ice:prepareLintJar (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.0 secs.
+:ice:generateDebugResValues (Thread[Task worker for ':' Thread 2,5,main]) started.
+
+> Task :activitygroupcompat:generateDebugBuildConfig
+Putting task artifact state for task ':activitygroupcompat:generateDebugBuildConfig' into context took 0.0 secs.
+Executing task ':activitygroupcompat:generateDebugBuildConfig' (up-to-date check took 0.001 secs) due to:
+  Output property 'sourceOutputDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/generated/source/buildConfig/debug has changed.
+  Output property 'sourceOutputDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/generated/source/buildConfig/debug/com has been removed.
+  Output property 'sourceOutputDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/generated/source/buildConfig/debug/com/taobao has been removed.
+
+:activitygroupcompat:generateDebugBuildConfig (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.029 secs.
+
+> Task :ice:generateDebugResValues
+Putting task artifact state for task ':ice:generateDebugResValues' into context took 0.0 secs.
+Executing task ':ice:generateDebugResValues' (up-to-date check took 0.0 secs) due to:
+  Output property 'resOutputDir' file /Users/ice/Desktop/atlas/ice/build/generated/res/resValues/debug has changed.
+
+:activitygroupcompat:prepareLintJar (Thread[Task worker for ':' Thread 3,5,main]) started.
+:ice:generateDebugResValues (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.001 secs.
+:ice:generateDebugResources (Thread[Task worker for ':' Thread 2,5,main]) started.
+
+> Task :activitygroupcompat:prepareLintJar
+Putting task artifact state for task ':activitygroupcompat:prepareLintJar' into context took 0.0 secs.
+Skipping task ':activitygroupcompat:prepareLintJar' as it is up-to-date (took 0.001 secs).
+
+:activitygroupcompat:prepareLintJar (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.001 secs.
+
+> Task :ice:generateDebugResources
+Skipping task ':ice:generateDebugResources' as it has no actions.
+
+:activitygroupcompat:generateDebugResValues (Thread[Task worker for ':' Thread 3,5,main]) started.
+:ice:generateDebugResources (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.001 secs.
+:ice:packageDebugResources (Thread[Task worker for ':' Thread 2,5,main]) started.
+
+> Task :activitygroupcompat:generateDebugResValues
+Putting task artifact state for task ':activitygroupcompat:generateDebugResValues' into context took 0.0 secs.
+Executing task ':activitygroupcompat:generateDebugResValues' (up-to-date check took 0.0 secs) due to:
+  Output property 'resOutputDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/generated/res/resValues/debug has changed.
+
+:activitygroupcompat:generateDebugResValues (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.002 secs.
+:activitygroupcompat:generateDebugResources (Thread[Task worker for ':' Thread 3,5,main]) started.
+
+> Task :activitygroupcompat:generateDebugResources
+Skipping task ':activitygroupcompat:generateDebugResources' as it has no actions.
+
+:activitygroupcompat:generateDebugResources (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.0 secs.
+:activitygroupcompat:packageDebugResources (Thread[Task worker for ':' Thread 3,5,main]) started.
+
+> Task :app:generateCeshiDebugResValues
+Putting task artifact state for task ':app:generateCeshiDebugResValues' into context took 0.0 secs.
+Executing task ':app:generateCeshiDebugResValues' (up-to-date check took 0.0 secs) due to:
+  Output property 'resOutputDir' file /Users/ice/Desktop/atlas/app/build/generated/res/resValues/ceshi/debug has changed.
+  Output property 'resOutputDir' file /Users/ice/Desktop/atlas/app/build/generated/res/resValues/ceshi/debug/values has been removed.
+  Output property 'resOutputDir' file /Users/ice/Desktop/atlas/app/build/generated/res/resValues/ceshi/debug/values/generated.xml has been removed.
+
+:app:generateCeshiDebugResValues (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.043 secs.
+:app:generateCeshiDebugResources (Thread[Task worker for ':' Thread 5,5,main]) started.
+
+> Task :app:generateCeshiDebugResources
+Skipping task ':app:generateCeshiDebugResources' as it has no actions.
+
+:app:generateCeshiDebugResources (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.001 secs.
+:app:mergeCeshiDebugResources (Thread[Task worker for ':' Thread 5,5,main]) started.
+
+> Task :activitygroupcompat:packageDebugResources
+Putting task artifact state for task ':activitygroupcompat:packageDebugResources' into context took 0.0 secs.
+Executing task ':activitygroupcompat:packageDebugResources' (up-to-date check took 0.001 secs) due to:
+  Output property 'generatedPngsOutputDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/generated/res/pngs/debug has changed.
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/incremental/packageDebugResources has changed.
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/incremental/packageDebugResources/compile-file-map.properties has been removed.
+All input files are considered out-of-date for incremental task ':activitygroupcompat:packageDebugResources'.
+Unable do incremental execution: full task run
+
+:activitygroupcompat:packageDebugResources (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.112 secs.
+:activitygroupcompat:platformAttrExtractor (Thread[Task worker for ':' Thread 3,5,main]) started.
+:activitygroupcompat:processDebugManifest (Thread[Daemon worker Thread 9,5,main]) started.
+
+> Task :ice:packageDebugResources
+Putting task artifact state for task ':ice:packageDebugResources' into context took 0.0 secs.
+Executing task ':ice:packageDebugResources' (up-to-date check took 0.001 secs) due to:
+  Output property 'generatedPngsOutputDir' file /Users/ice/Desktop/atlas/ice/build/generated/res/pngs/debug has changed.
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/incremental/packageDebugResources has changed.
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/incremental/packageDebugResources/compile-file-map.properties has been removed.
+All input files are considered out-of-date for incremental task ':ice:packageDebugResources'.
+Unable do incremental execution: full task run
+
+:ice:packageDebugResources (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.132 secs.
+:ice:platformAttrExtractor (Thread[Task worker for ':' Thread 2,5,main]) started.
+:ice:processDebugManifest (Thread[Task worker for ':' Thread 7,5,main]) started.
+
+> Task :apt:compileJava
+Putting task artifact state for task ':apt:compileJava' into context took 0.0 secs.
+Executing task ':apt:compileJava' (up-to-date check took 0.012 secs) due to:
+  Output property 'destinationDir' file /Users/ice/Desktop/atlas/apt/build/classes/java/main has changed.
+  Output property 'destinationDir' file /Users/ice/Desktop/atlas/apt/build/classes/java/main/com has been removed.
+  Output property 'destinationDir' file /Users/ice/Desktop/atlas/apt/build/classes/java/main/com/app has been removed.
+All input files are considered out-of-date for incremental task ':apt:compileJava'.
+Compiling with JDK Java compiler API.
+
+:apt:compileJava (Thread[Task worker for ':' Thread 6,5,main]) completed. Took 0.266 secs.
+:apt:classes (Thread[Task worker for ':' Thread 6,5,main]) started.
+
+> Task :apt:classes
+Skipping task ':apt:classes' as it has no actions.
+
+:apt:classes (Thread[Task worker for ':' Thread 6,5,main]) completed. Took 0.0 secs.
+:apt:jar (Thread[Task worker for ':' Thread 6,5,main]) started.
+
+> Task :activitygroupcompat:processDebugManifest
+Putting task artifact state for task ':activitygroupcompat:processDebugManifest' into context took 0.0 secs.
+Executing task ':activitygroupcompat:processDebugManifest' (up-to-date check took 0.0 secs) due to:
+  Output property 'aaptFriendlyManifestOutputDirectory' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/manifests/aapt/debug has changed.
+  Output property 'aaptFriendlyManifestOutputDirectory' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/manifests/aapt/debug/AndroidManifest.xml has been removed.
+  Output property 'aaptFriendlyManifestOutputDirectory' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/manifests/aapt/debug/output.json has been removed.
+All input files are considered out-of-date for incremental task ':activitygroupcompat:processDebugManifest'.
+Unable do incremental execution: full task run
+Merging main manifest /Users/ice/Desktop/atlas/activitygroupcompat/src/main/AndroidManifest.xml
+
+Merging result: SUCCESS
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.taobao.activitygroupcompat"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->/Users/ice/Desktop/atlas/activitygroupcompat/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="26" />
+9-->/Users/ice/Desktop/atlas/activitygroupcompat/src/main/AndroidManifest.xml
+10
+11</manifest>
+
+Merged manifest saved to /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/manifests/full/debug/AndroidManifest.xml
+
+:activitygroupcompat:processDebugManifest (Thread[Daemon worker Thread 9,5,main]) completed. Took 0.098 secs.
+
+> Task :ice:processDebugManifest
+Putting task artifact state for task ':ice:processDebugManifest' into context took 0.0 secs.
+Executing task ':ice:processDebugManifest' (up-to-date check took 0.0 secs) due to:
+  Output property 'aaptFriendlyManifestOutputDirectory' file /Users/ice/Desktop/atlas/ice/build/intermediates/manifests/aapt/debug has changed.
+  Output property 'aaptFriendlyManifestOutputDirectory' file /Users/ice/Desktop/atlas/ice/build/intermediates/manifests/aapt/debug/AndroidManifest.xml has been removed.
+  Output property 'aaptFriendlyManifestOutputDirectory' file /Users/ice/Desktop/atlas/ice/build/intermediates/manifests/aapt/debug/output.json has been removed.
+All input files are considered out-of-date for incremental task ':ice:processDebugManifest'.
+Unable do incremental execution: full task run
+Merging main manifest /Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml
+
+Merging result: SUCCESS
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.thinkwage.library" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="17"
+6-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="26" />
+7-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+9-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:4:5-84
+9-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:4:22-81
+10    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+10-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:5:5-75
+10-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:5:22-72
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:7:5-79
+12-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:8:5-76
+13-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:8:22-73
+14    <uses-permission android:name="android.permission.READ_LOGS" />
+14-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:9:5-68
+14-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:9:22-65
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:10:5-81
+15-->/Users/ice/Desktop/atlas/ice/src/main/AndroidManifest.xml:10:22-78
+16
+17</manifest>
+
+Merged manifest saved to /Users/ice/Desktop/atlas/ice/build/intermediates/manifests/full/debug/AndroidManifest.xml
+
+:activitygroupcompat:javaPreCompileDebug (Thread[Daemon worker Thread 9,5,main]) started.
+:ice:processDebugManifest (Thread[Task worker for ':' Thread 7,5,main]) completed. Took 0.083 secs.
+:ice:mergeDebugShaders (Thread[Task worker for ':' Thread 7,5,main]) started.
+
+> Task :ice:mergeDebugShaders
+Putting task artifact state for task ':ice:mergeDebugShaders' into context took 0.0 secs.
+Executing task ':ice:mergeDebugShaders' (up-to-date check took 0.0 secs) due to
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/incremental/mergeDebugShaders has changed.
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/incremental/mergeDebugShaders/merger.xml has been removed.
+  Output property 'outputDir' file /Users/ice/Desktop/atlas/ice/build/intermediates/shaders/debug has changed.
+All input files are considered out-of-date for incremental task ':ice:mergeDebugShaders'.
+Unable do incremental execution: full task run
+
+:ice:mergeDebugShaders (Thread[Task worker for ':' Thread 7,5,main]) completed. Took 0.005 secs.
+:ice:compileDebugShaders (Thread[Task worker for ':' Thread 7,5,main]) started.
+
+> Task :apt:jar
+Putting task artifact state for task ':apt:jar' into context took 0.0 secs.
+Executing task ':apt:jar' (up-to-date check took 0.006 secs) due to:
+  Output property 'archivePath' file /Users/ice/Desktop/atlas/apt/build/libs/apt.jar has changed.
+
+:apt:jar (Thread[Task worker for ':' Thread 6,5,main]) completed. Took 0.015 secs.
+
+> Task :activitygroupcompat:javaPreCompileDebug
+Putting task artifact state for task ':activitygroupcompat:javaPreCompileDebug' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/activitygroupcompat/libs', not found
+Executing task ':activitygroupcompat:javaPreCompileDebug' (up-to-date check took 0.001 secs) due to:
+  Output property 'processorListFile' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/javaPrecompile/debug/annotationProcessors.json has changed.
+file or directory '/Users/ice/Desktop/atlas/activitygroupcompat/libs', not found
+
+:activitygroupcompat:javaPreCompileDebug (Thread[Daemon worker Thread 9,5,main]) completed. Took 0.006 secs.
+:activitygroupcompat:mergeDebugShaders (Thread[Daemon worker Thread 9,5,main]) started.
+
+> Task :ice:compileDebugShaders
+Putting task artifact state for task ':ice:compileDebugShaders' into context took 0.0 secs.
+Executing task ':ice:compileDebugShaders' (up-to-date check took 0.001 secs) due to:
+  Output property 'outputDir' file /Users/ice/Desktop/atlas/ice/build/generated/assets/shaders/debug has changed.
+
+:ice:compileDebugShaders (Thread[Task worker for ':' Thread 7,5,main]) completed. Took 0.004 secs.
+:ice:javaPreCompileDebug (Thread[Task worker for ':' Thread 7,5,main]) started.
+
+> Task :activitygroupcompat:mergeDebugShaders
+Putting task artifact state for task ':activitygroupcompat:mergeDebugShaders' into context took 0.0 secs.
+Executing task ':activitygroupcompat:mergeDebugShaders' (up-to-date check took 0.001 secs) due to:
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/incremental/mergeDebugShaders has changed.
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/incremental/mergeDebugShaders/merger.xml has been removed.
+  Output property 'outputDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/shaders/debug has changed.
+All input files are considered out-of-date for incremental task ':activitygroupcompat:mergeDebugShaders'.
+Unable do incremental execution: full task run
+
+:activitygroupcompat:mergeDebugShaders (Thread[Daemon worker Thread 9,5,main]) completed. Took 0.004 secs.
+:activitygroupcompat:compileDebugShaders (Thread[Daemon worker Thread 9,5,main]) started.
+
+> Task :activitygroupcompat:compileDebugShaders
+Putting task artifact state for task ':activitygroupcompat:compileDebugShaders' into context took 0.0 secs.
+Executing task ':activitygroupcompat:compileDebugShaders' (up-to-date check took 0.0 secs) due to:
+  Output property 'outputDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/generated/assets/shaders/debug has changed.
+
+:activitygroupcompat:compileDebugShaders (Thread[Daemon worker Thread 9,5,main]) completed. Took 0.002 secs.
+:activitygroupcompat:generateDebugAssets (Thread[Daemon worker Thread 9,5,main]) started.
+
+> Task :activitygroupcompat:generateDebugAssets
+Skipping task ':activitygroupcompat:generateDebugAssets' as it has no actions.
+
+:activitygroupcompat:generateDebugAssets (Thread[Daemon worker Thread 9,5,main]) completed. Took 0.0 secs.
+:activitygroupcompat:mergeDebugAssets (Thread[Daemon worker Thread 9,5,main]) started.
+
+> Task :activitygroupcompat:mergeDebugAssets
+Putting task artifact state for task ':activitygroupcompat:mergeDebugAssets' into context took 0.0 secs.
+Executing task ':activitygroupcompat:mergeDebugAssets' (up-to-date check took 0.001 secs) due to:
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/incremental/mergeDebugAssets has changed.
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/incremental/mergeDebugAssets/merger.xml has been removed.
+  Output property 'outputDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/bundles/debug/assets has changed.
+All input files are considered out-of-date for incremental task ':activitygroupcompat:mergeDebugAssets'.
+Unable do incremental execution: full task run
+
+:activitygroupcompat:mergeDebugAssets (Thread[Daemon worker Thread 9,5,main]) completed. Took 0.004 secs.
+:activitygroupcompat:mergeDebugConsumerProguardFiles (Thread[Daemon worker Thread 9,5,main]) started.
+
+> Task :activitygroupcompat:mergeDebugConsumerProguardFiles
+Putting task artifact state for task ':activitygroupcompat:mergeDebugConsumerProguardFiles' into context took 0.0 secs.
+Skipping task ':activitygroupcompat:mergeDebugConsumerProguardFiles' as it is up-to-date (took 0.0 secs).
+
+:activitygroupcompat:mergeDebugConsumerProguardFiles (Thread[Daemon worker Thread 9,5,main]) completed. Took 0.001 secs.
+:activitygroupcompat:packageDebugRenderscript (Thread[Daemon worker Thread 9,5,main]) started.
+
+> Task :activitygroupcompat:packageDebugRenderscript
+Putting task artifact state for task ':activitygroupcompat:packageDebugRenderscript' into context took 0.0 secs.
+Skipping task ':activitygroupcompat:packageDebugRenderscript' as it has no source files and no previous output files.
+
+:activitygroupcompat:packageDebugRenderscript (Thread[Daemon worker Thread 9,5,main]) completed. Took 0.0 secs.
+:activitygroupcompat:processDebugJavaRes (Thread[Daemon worker Thread 9,5,main]) started.
+
+> Task :activitygroupcompat:processDebugJavaRes
+Putting task artifact state for task ':activitygroupcompat:processDebugJavaRes' into context took 0.0 secs.
+Skipping task ':activitygroupcompat:processDebugJavaRes' as it has no source files and no previous output files.
+
+:activitygroupcompat:processDebugJavaRes (Thread[Daemon worker Thread 9,5,main]) completed. Took 0.001 secs.
+:activitygroupcompat:mergeDebugJniLibFolders (Thread[Daemon worker Thread 9,5,main]) started.
+
+> Task :activitygroupcompat:mergeDebugJniLibFolders
+Putting task artifact state for task ':activitygroupcompat:mergeDebugJniLibFolders' into context took 0.0 secs.
+Executing task ':activitygroupcompat:mergeDebugJniLibFolders' (up-to-date check took 0.001 secs) due to:
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/incremental/mergeDebugJniLibFolders has changed.
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml has been removed.
+  Output property 'outputDir' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/jniLibs/debug has changed.
+All input files are considered out-of-date for incremental task ':activitygroupcompat:mergeDebugJniLibFolders'.
+Unable do incremental execution: full task run
+
+:activitygroupcompat:mergeDebugJniLibFolders (Thread[Daemon worker Thread 9,5,main]) completed. Took 0.003 secs.
+:activitygroupcompat:transformNativeLibsWithMergeJniLibsForDebug (Thread[Daemon worker Thread 9,5,main]) started.
+Trying to start /Users/ice/.gradle/caches/modules-2/files-2.1/com.taobao.android/aapt/2.3.1.rc4/593df1ae86cbee190c8fbd096adfb1b56f76d41d/aapt-2.3.1.rc4/aapt
+Trying to start /Users/ice/.gradle/caches/modules-2/files-2.1/com.taobao.android/aapt/2.3.1.rc4/593df1ae86cbee190c8fbd096adfb1b56f76d41d/aapt-2.3.1.rc4/aapt
+Trying to start /Users/ice/.gradle/caches/modules-2/files-2.1/com.taobao.android/aapt/2.3.1.rc4/593df1ae86cbee190c8fbd096adfb1b56f76d41d/aapt-2.3.1.rc4/aapt
+Trying to start /Users/ice/.gradle/caches/modules-2/files-2.1/com.taobao.android/aapt/2.3.1.rc4/593df1ae86cbee190c8fbd096adfb1b56f76d41d/aapt-2.3.1.rc4/aapt
+Trying to start /Users/ice/.gradle/caches/modules-2/files-2.1/com.taobao.android/aapt/2.3.1.rc4/593df1ae86cbee190c8fbd096adfb1b56f76d41d/aapt-2.3.1.rc4/aapt
+Trying to start /Users/ice/.gradle/caches/modules-2/files-2.1/com.taobao.android/aapt/2.3.1.rc4/593df1ae86cbee190c8fbd096adfb1b56f76d41d/aapt-2.3.1.rc4/aapt
+Trying to start /Users/ice/.gradle/caches/modules-2/files-2.1/com.taobao.android/aapt/2.3.1.rc4/593df1ae86cbee190c8fbd096adfb1b56f76d41d/aapt-2.3.1.rc4/aapt
+Trying to start /Users/ice/.gradle/caches/modules-2/files-2.1/com.taobao.android/aapt/2.3.1.rc4/593df1ae86cbee190c8fbd096adfb1b56f76d41d/aapt-2.3.1.rc4/aapt
+
+> Task :ice:javaPreCompileDebug
+Putting task artifact state for task ':ice:javaPreCompileDebug' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/ice/libs', not found
+Executing task ':ice:javaPreCompileDebug' (up-to-date check took 0.039 secs) due to:
+  Task ':ice:javaPreCompileDebug' class path has changed from 6eadd2266b29bf76e49021f273d12970 to eb153956326d7ba7ea22ff0454898b51.
+file or directory '/Users/ice/Desktop/atlas/ice/libs', not found
+
+:ice:javaPreCompileDebug (Thread[Task worker for ':' Thread 7,5,main]) completed. Took 0.068 secs.
+:ice:generateDebugAssets (Thread[Task worker for ':' Thread 7,5,main]) started.
+
+> Task :ice:generateDebugAssets
+Skipping task ':ice:generateDebugAssets' as it has no actions.
+
+:ice:generateDebugAssets (Thread[Task worker for ':' Thread 7,5,main]) completed. Took 0.0 secs.
+:ice:mergeDebugAssets (Thread[Task worker for ':' Thread 7,5,main]) started.
+
+> Task :ice:mergeDebugAssets
+Putting task artifact state for task ':ice:mergeDebugAssets' into context took 0.0 secs.
+Executing task ':ice:mergeDebugAssets' (up-to-date check took 0.0 secs) due to:
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/incremental/mergeDebugAssets has changed.
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/incremental/mergeDebugAssets/merger.xml has been removed.
+  Output property 'outputDir' file /Users/ice/Desktop/atlas/ice/build/intermediates/bundles/debug/assets has changed.
+All input files are considered out-of-date for incremental task ':ice:mergeDebugAssets'.
+Unable do incremental execution: full task run
+
+:ice:mergeDebugAssets (Thread[Task worker for ':' Thread 7,5,main]) completed. Took 0.004 secs.
+:ice:mergeDebugConsumerProguardFiles (Thread[Task worker for ':' Thread 7,5,main]) started.
+
+> Task :ice:mergeDebugConsumerProguardFiles
+Putting task artifact state for task ':ice:mergeDebugConsumerProguardFiles' into context took 0.0 secs.
+Skipping task ':ice:mergeDebugConsumerProguardFiles' as it is up-to-date (took 0.0 secs).
+
+Started 673827182
+Started 53235370
+:ice:mergeDebugConsumerProguardFiles (Thread[Task worker for ':' Thread 7,5,main]) completed. Took 0.001 secs.
+Started 1524661388
+Started 1745493519
+:ice:packageDebugRenderscript (Thread[Task worker for ':' Thread 4,5,main]) started.
+Started 1367404153
+Slave 673827182 is ready
+Started 1558711525
+Slave 1524661388 is ready
+Slave 53235370 is ready
+Slave 1367404153 is ready
+Started 1794774364
+Slave 1745493519 is ready
+Slave 1558711525 is ready
+Started 1003879858
+Slave 1794774364 is ready
+Slave 1003879858 is ready
+
+> Task :ice:packageDebugRenderscript
+Putting task artifact state for task ':ice:packageDebugRenderscript' into context took 0.0 secs.
+Skipping task ':ice:packageDebugRenderscript' as it has no source files and no previous output files.
+
+:ice:packageDebugRenderscript (Thread[Task worker for ':' Thread 4,5,main]) completed. Took 0.0 secs.
+:ice:processDebugJavaRes (Thread[Task worker for ':' Thread 4,5,main]) started.
+
+> Task :ice:processDebugJavaRes
+Putting task artifact state for task ':ice:processDebugJavaRes' into context took 0.0 secs.
+Skipping task ':ice:processDebugJavaRes' as it has no source files and no previous output files.
+
+:ice:processDebugJavaRes (Thread[Task worker for ':' Thread 4,5,main]) completed. Took 0.0 secs.
+:ice:mergeDebugJniLibFolders (Thread[Task worker for ':' Thread 4,5,main]) started.
+AAPT(QueuedJob{
+title=Crunching icon_warning.9.png, 
+task={from=/Users/ice/Desktop/atlas/app/src/main/res/drawable/icon_warning.9.png, to=/Users/ice/Desktop/atlas/app/build/intermediates/res/merged/ceshi/debug/drawable/icon_warning.9.png}, 
+future=com.google.common.util.concurrent.SettableFuture@6dce16a8}) discarded: Crunching /Users/ice/Desktop/atlas/app/src/main/res/drawable/icon_warning.9.png
+AAPT1 processed(673827182) icon_warning.9.png job:QueuedJob{
+title=Crunching icon_warning.9.png, 
+task={from=/Users/ice/Desktop/atlas/app/src/main/res/drawable/icon_warning.9.png, to=/Users/ice/Desktop/atlas/app/build/intermediates/res/merged/ceshi/debug/drawable/icon_warning.9.png}, 
+future=com.google.common.util.concurrent.SettableFuture@6dce16a8}
+
+> Task :activitygroupcompat:transformNativeLibsWithMergeJniLibsForDebug
+Putting task artifact state for task ':activitygroupcompat:transformNativeLibsWithMergeJniLibsForDebug' into context took 0.0 secs.
+Executing task ':activitygroupcompat:transformNativeLibsWithMergeJniLibsForDebug' (up-to-date check took 0.001 secs) due to:
+  Output property 'otherFolderOutputs.otherFolderOutput1' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/incremental/debug-mergeJniLibs/zip-cache has changed.
+  Output property 'streamOutputFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/transforms/mergeJniLibs/debug has changed.
+  Output property 'streamOutputFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/transforms/mergeJniLibs/debug/__content__.json has been removed.
+All input files are considered out-of-date for incremental task ':activitygroupcompat:transformNativeLibsWithMergeJniLibsForDebug'.
+
+:activitygroupcompat:transformNativeLibsWithMergeJniLibsForDebug (Thread[Daemon worker Thread 9,5,main]) completed. Took 0.065 secs.
+:activitygroupcompat:transformNativeLibsWithSyncJniLibsForDebug (Thread[Daemon worker Thread 9,5,main]) started.
+
+> Task :ice:mergeDebugJniLibFolders
+Putting task artifact state for task ':ice:mergeDebugJniLibFolders' into context took 0.0 secs.
+Executing task ':ice:mergeDebugJniLibFolders' (up-to-date check took 0.001 secs) due to:
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/incremental/mergeDebugJniLibFolders has changed.
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml has been removed.
+  Output property 'outputDir' file /Users/ice/Desktop/atlas/ice/build/intermediates/jniLibs/debug has changed.
+All input files are considered out-of-date for incremental task ':ice:mergeDebugJniLibFolders'.
+Unable do incremental execution: full task run
+
+:ice:mergeDebugJniLibFolders (Thread[Task worker for ':' Thread 4,5,main]) completed. Took 0.003 secs.
+AAPT(QueuedJob{
+title=Crunching icon_warning.9.png, 
+task={from=/Users/ice/Desktop/atlas/app/src/main/res/drawable/icon_warning.9.png, to=/Users/ice/Desktop/atlas/app/build/intermediates/res/merged/ceshi/debug/drawable/icon_warning.9.png}, 
+future=com.google.common.util.concurrent.SettableFuture@6dce16a8}) discarded: Crunching single PNG file: /Users/ice/Desktop/atlas/app/src/main/res/drawable/icon_warning.9.png
+:ice:transformNativeLibsWithMergeJniLibsForDebug (Thread[Task worker for ':' Thread 4,5,main]) started.
+AAPT(QueuedJob{
+title=Crunching icon_warning.9.png, 
+task={from=/Users/ice/Desktop/atlas/app/src/main/res/drawable/icon_warning.9.png, to=/Users/ice/Desktop/atlas/app/build/intermediates/res/merged/ceshi/debug/drawable/icon_warning.9.png}, 
+future=com.google.common.util.concurrent.SettableFuture@6dce16a8}) discarded:   Output file: /Users/ice/Desktop/atlas/app/build/intermediates/res/merged/ceshi/debug/drawable/icon_warning.9.png
+
+> Task :activitygroupcompat:transformNativeLibsWithSyncJniLibsForDebug
+Putting task artifact state for task ':activitygroupcompat:transformNativeLibsWithSyncJniLibsForDebug' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/activitygroupcompat/libs', not found
+Executing task ':activitygroupcompat:transformNativeLibsWithSyncJniLibsForDebug' (up-to-date check took 0.001 secs) due to:
+  Output property 'otherFolderOutputs.otherFolderOutput1' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/bundles/debug/jni has changed.
+All input files are considered out-of-date for incremental task ':activitygroupcompat:transformNativeLibsWithSyncJniLibsForDebug'.
+
+:activitygroupcompat:transformNativeLibsWithSyncJniLibsForDebug (Thread[Daemon worker Thread 9,5,main]) completed. Took 0.003 secs.
+
+> Task :activitygroupcompat:platformAttrExtractor
+Putting task artifact state for task ':activitygroupcompat:platformAttrExtractor' into context took 0.0 secs.
+Executing task ':activitygroupcompat:platformAttrExtractor' (up-to-date check took 0.0 secs) due to:
+  Output property 'output' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/attr/R.txt has changed.
+
+:activitygroupcompat:platformAttrExtractor (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.193 secs.
+:activitygroupcompat:processDebugResources (Thread[Task worker for ':' Thread 3,5,main]) started.
+
+> Task :ice:transformNativeLibsWithMergeJniLibsForDebug
+Putting task artifact state for task ':ice:transformNativeLibsWithMergeJniLibsForDebug' into context took 0.0 secs.
+Executing task ':ice:transformNativeLibsWithMergeJniLibsForDebug' (up-to-date check took 0.0 secs) due to:
+  Output property 'otherFolderOutputs.otherFolderOutput1' file /Users/ice/Desktop/atlas/ice/build/intermediates/incremental/debug-mergeJniLibs/zip-cache has changed.
+  Output property 'streamOutputFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/transforms/mergeJniLibs/debug has changed.
+  Output property 'streamOutputFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/transforms/mergeJniLibs/debug/__content__.json has been removed.
+All input files are considered out-of-date for incremental task ':ice:transformNativeLibsWithMergeJniLibsForDebug'.
+
+:ice:transformNativeLibsWithMergeJniLibsForDebug (Thread[Task worker for ':' Thread 4,5,main]) completed. Took 0.004 secs.
+:ice:transformNativeLibsWithSyncJniLibsForDebug (Thread[Task worker for ':' Thread 4,5,main]) started.
+
+> Task :ice:transformNativeLibsWithSyncJniLibsForDebug
+Putting task artifact state for task ':ice:transformNativeLibsWithSyncJniLibsForDebug' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/ice/libs', not found
+Executing task ':ice:transformNativeLibsWithSyncJniLibsForDebug' (up-to-date check took 0.0 secs) due to:
+  Output property 'otherFolderOutputs.otherFolderOutput1' file /Users/ice/Desktop/atlas/ice/build/intermediates/bundles/debug/jni has changed.
+All input files are considered out-of-date for incremental task ':ice:transformNativeLibsWithSyncJniLibsForDebug'.
+
+:ice:transformNativeLibsWithSyncJniLibsForDebug (Thread[Task worker for ':' Thread 4,5,main]) completed. Took 0.002 secs.
+
+> Task :ice:platformAttrExtractor
+Putting task artifact state for task ':ice:platformAttrExtractor' into context took 0.0 secs.
+Executing task ':ice:platformAttrExtractor' (up-to-date check took 0.0 secs) due to:
+  Output property 'output' file /Users/ice/Desktop/atlas/ice/build/intermediates/attr/R.txt has changed.
+
+:ice:platformAttrExtractor (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.181 secs.
+:ice:processDebugResources (Thread[Task worker for ':' Thread 2,5,main]) started.
+AAPT1 processed(1524661388) icon_normal.9.png job:QueuedJob{
+title=Crunching icon_normal.9.png, 
+task={from=/Users/ice/Desktop/atlas/app/src/main/res/drawable/icon_normal.9.png, to=/Users/ice/Desktop/atlas/app/build/intermediates/res/merged/ceshi/debug/drawable/icon_normal.9.png}, 
+future=com.google.common.util.concurrent.SettableFuture@5edff308}
+AAPT(QueuedJob{
+title=Crunching icon_normal.9.png, 
+task={from=/Users/ice/Desktop/atlas/app/src/main/res/drawable/icon_normal.9.png, to=/Users/ice/Desktop/atlas/app/build/intermediates/res/merged/ceshi/debug/drawable/icon_normal.9.png}, 
+future=com.google.common.util.concurrent.SettableFuture@5edff308}) discarded: Crunching /Users/ice/Desktop/atlas/app/src/main/res/drawable/icon_normal.9.png
+AAPT(QueuedJob{
+title=Crunching icon_normal.9.png, 
+task={from=/Users/ice/Desktop/atlas/app/src/main/res/drawable/icon_normal.9.png, to=/Users/ice/Desktop/atlas/app/build/intermediates/res/merged/ceshi/debug/drawable/icon_normal.9.png}, 
+future=com.google.common.util.concurrent.SettableFuture@5edff308}) discarded: Crunching single PNG file: /Users/ice/Desktop/atlas/app/src/main/res/drawable/icon_normal.9.png
+AAPT(QueuedJob{
+title=Crunching icon_normal.9.png, 
+task={from=/Users/ice/Desktop/atlas/app/src/main/res/drawable/icon_normal.9.png, to=/Users/ice/Desktop/atlas/app/build/intermediates/res/merged/ceshi/debug/drawable/icon_normal.9.png}, 
+future=com.google.common.util.concurrent.SettableFuture@5edff308}) discarded:   Output file: /Users/ice/Desktop/atlas/app/build/intermediates/res/merged/ceshi/debug/drawable/icon_normal.9.png
+Process (1003879858) processed 0 files
+Process (1558711525) processed 0 files
+Process (53235370) processed 0 files
+Process (1367404153) processed 0 files
+Process (1794774364) processed 0 files
+Thread(queued-resource-processor_8): Process(1367404153), after shutdown queue_size=4
+Thread(queued-resource-processor_4): Process(53235370), after shutdown queue_size=5
+Thread(queued-resource-processor_5): Process(1794774364), after shutdown queue_size=3
+Process (673827182) processed 1 files
+Process (1745493519) processed 0 files
+Process (1524661388) processed 1 files
+Thread(queued-resource-processor_7): Process(1745493519), after shutdown queue_size=1
+Thread(queued-resource-processor_3): Process(1558711525), after shutdown queue_size=6
+Thread(queued-resource-processor_2): Process(1003879858), after shutdown queue_size=6
+Thread(queued-resource-processor_6): Process(1524661388), after shutdown queue_size=0
+Thread(queued-resource-processor_1): Process(673827182), after shutdown queue_size=2
+
+> Task :app:mergeCeshiDebugResources
+Putting task artifact state for task ':app:mergeCeshiDebugResources' into context took 0.0 secs.
+Executing task ':app:mergeCeshiDebugResources' (up-to-date check took 0.002 secs) due to:
+  Output property 'blameLogFolder' file /Users/ice/Desktop/atlas/app/build/intermediates/blame/res/ceshi/debug has changed.
+  Output property 'blameLogFolder' file /Users/ice/Desktop/atlas/app/build/intermediates/blame/res/ceshi/debug/multi-v2 has been removed.
+  Output property 'blameLogFolder' file /Users/ice/Desktop/atlas/app/build/intermediates/blame/res/ceshi/debug/multi-v2/values.json has been removed.
+All input files are considered out-of-date for incremental task ':app:mergeCeshiDebugResources'.
+Unable do incremental execution: full task run
+QueuedCruncher is using /Users/ice/.gradle/caches/modules-2/files-2.1/com.taobao.android/aapt/2.3.1.rc4/593df1ae86cbee190c8fbd096adfb1b56f76d41d/aapt-2.3.1.rc4/aapt
+
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xhdpi/ic_launcher_background.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_launcher_background.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xxhdpi/ic_dashboard_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_dashboard_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-ldpi/ic_dashboard_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_dashboard_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xhdpi/ic_dashboard_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_dashboard_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xxhdpi/ic_home_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_home_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-mdpi/ic_home_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_home_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xxxhdpi/ic_dashboard_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_dashboard_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-mdpi/ic_widgets_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_widgets_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xhdpi/ic_notifications_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_notifications_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-ldpi/ic_launcher_background.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_launcher_background.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-hdpi/ic_notifications_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_notifications_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-mdpi/ic_notifications_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_notifications_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-hdpi/ic_dashboard_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_dashboard_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-hdpi/ic_home_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_home_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xxhdpi/ic_widgets_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_widgets_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xxxhdpi/ic_home_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_home_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-ldpi/ic_widgets_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_widgets_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xhdpi/ic_home_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_home_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xxhdpi/ic_notifications_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_notifications_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-ldpi/ic_home_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_home_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-ldpi/ic_notifications_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_notifications_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xxxhdpi/ic_notifications_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_notifications_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-mdpi/ic_dashboard_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_dashboard_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-hdpi/ic_launcher_background.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_launcher_background.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xxxhdpi/ic_widgets_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_widgets_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xxxhdpi/ic_launcher_background.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_launcher_background.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xxhdpi/ic_launcher_background.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_launcher_background.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-xhdpi/ic_widgets_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_widgets_black_24dp.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-mdpi/ic_launcher_background.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_launcher_background.xml]
+Generating PNG: [/Users/ice/Desktop/atlas/app/build/generated/res/pngs/ceshi/debug/drawable-hdpi/ic_widgets_black_24dp.png] from [/Users/ice/Desktop/atlas/app/src/main/res/drawable/ic_widgets_black_24dp.xml]
+Shutdown finished in 4ms
+
+:app:mergeCeshiDebugResources (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.349 secs.
+:app:createCeshiDebugCompatibleScreenManifests (Thread[Task worker for ':' Thread 5,5,main]) started.
+
+> Task :app:createCeshiDebugCompatibleScreenManifests
+Putting task artifact state for task ':app:createCeshiDebugCompatibleScreenManifests' into context took 0.0 secs.
+Executing task ':app:createCeshiDebugCompatibleScreenManifests' (up-to-date check took 0.001 secs) due to:
+  Output property 'outputFolder' file /Users/ice/Desktop/atlas/app/build/intermediates/manifests/density/ceshi/debug has changed.
+  Output property 'outputFolder' file /Users/ice/Desktop/atlas/app/build/intermediates/manifests/density/ceshi/debug/output.json has been removed.
+
+:app:createCeshiDebugCompatibleScreenManifests (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.005 secs.
+:app:processCeshiDebugManifest (Thread[Task worker for ':' Thread 5,5,main]) started.
+
+> Task :app:processCeshiDebugManifest
+Putting task artifact state for task ':app:processCeshiDebugManifest' into context took 0.0 secs.
+Executing task ':app:processCeshiDebugManifest' (up-to-date check took 0.001 secs) due to:
+  Task has failed previously.
+All input files are considered out-of-date for incremental task ':app:processCeshiDebugManifest'.
+Unable do incremental execution: full task run
+Loading library manifest /Users/ice/Desktop/atlas/app/build/intermediates/exploded-aar/com.taobao.android/atlasupdate/1.1.4.5/AndroidManifest.xml
+
+:app:processCeshiDebugManifest (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.011 secs.
+
+> Task :activitygroupcompat:processDebugResources
+Putting task artifact state for task ':activitygroupcompat:processDebugResources' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/activitygroupcompat/libs', not foun
+file or directory '/Users/ice/Desktop/atlas/activitygroupcompat/libs', not foun
+Executing task ':activitygroupcompat:processDebugResources' (up-to-date check took 0.003 secs) due to:
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/incremental/processDebugResources has changed.
+  Output property 'resPackageOutputFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/res/debug has changed.
+  Output property 'resPackageOutputFolder' file /Users/ice/Desktop/atlas/activitygroupcompat/build/intermediates/res/debug/output.json has been removed.
+All input files are considered out-of-date for incremental task ':activitygroupcompat:processDebugResources'.
+Unable do incremental execution: full task run
+file or directory '/Users/ice/Desktop/atlas/activitygroupcompat/libs', not found
+file or directory '/Users/ice/Desktop/atlas/activitygroupcompat/libs', not found
+
+:activitygroupcompat:processDebugResources (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 0.121 secs.
+
+> Task :ice:processDebugResources
+Putting task artifact state for task ':ice:processDebugResources' into context took 0.0 secs.
+file or directory '/Users/ice/Desktop/atlas/ice/libs', not found
+file or directory '/Users/ice/Desktop/atlas/ice/libs', not found
+Executing task ':ice:processDebugResources' (up-to-date check took 0.007 secs) due to:
+  Output property 'incrementalFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/incremental/processDebugResources has changed.
+  Output property 'resPackageOutputFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/res/debug has changed.
+  Output property 'resPackageOutputFolder' file /Users/ice/Desktop/atlas/ice/build/intermediates/res/debug/output.json has been removed.
+All input files are considered out-of-date for incremental task ':ice:processDebugResources'.
+Unable do incremental execution: full task run
+file or directory '/Users/ice/Desktop/atlas/ice/libs', not found
+file or directory '/Users/ice/Desktop/atlas/ice/libs', not found
+
+:ice:processDebugResources (Thread[Task worker for ':' Thread 2,5,main]) completed. Took 0.186 secs.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processCeshiDebugManifest'.
+> com.android.manifmerger.ManifestMerger2$MergeFailureException: java.io.FileNotFoundException: /Users/ice/Desktop/atlas/app/build/intermediates/exploded-aar/com.taobao.android/atlasupdate/1.1.4.5/AndroidManifest.xml (No such file or directory)
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --debug option to get more log output.
+
+* Get more help at https://help.gradle.org

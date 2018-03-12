@@ -1,0 +1,54 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "config.gradle"
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+        google()
+
+    }
+
+    configurations.all {
+        resolutionStrategy.cacheDynamicVersionsFor 0, 'seconds'
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+    }
+
+    dependencies {
+        classpath "com.taobao.android:atlasplugin:3.0.1-rc21"
+//        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
+        //aop
+        classpath 'org.aspectj:aspectjtools:1.8.13'
+
+    }
+}
+
+//allprojects {
+//    repositories {
+//        google()
+//        jcenter()
+//        maven { url "https://jitpack.io" }
+//    }
+//}
+
+
+subprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url "https://jitpack.io" }
+
+    }
+
+    configurations {
+        compileProject.extendsFrom compile, archives
+        runtimeProject.extendsFrom runtime, archives
+    }
+}
+
+
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

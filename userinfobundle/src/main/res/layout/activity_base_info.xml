@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toobar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_headpic"
+                style="@style/LayoutPadding"
+                android:layout_height="75dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_headpic"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_camera" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@mipmap/ic_arrow_right" />
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/LayoutPadding"
+                android:layout_height="50dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/LayoutTextLeft"
+                    android:text="姓名" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/LayoutTextRight" />
+
+                <View
+                    style="@style/BottomLine"
+                    android:layout_gravity="bottom" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_revise_nickname"
+                style="@style/LayoutPadding"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/LayoutTextLeft"
+                    android:text="昵称" />
+
+                <TextView style="@style/LayoutTextRightArrow"
+                    android:id="@+id/tv_nickname"
+                    />
+
+                <View
+                    style="@style/BottomLine"
+                    android:layout_gravity="bottom" />
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/LayoutPadding"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/LayoutTextLeft"
+                    android:text="性别" />
+
+                <TextView style="@style/LayoutTextRight"
+                    android:id="@+id/tv_gender"
+                    />
+
+                <View
+                    style="@style/BottomLine"
+                    android:layout_gravity="bottom" />
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/LayoutPadding"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/LayoutTextLeft"
+                    android:text="出生日期" />
+
+                <TextView style="@style/LayoutTextRight"
+                    android:id="@+id/tv_birthdate"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/LayoutPadding"
+                android:layout_height="50dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/LayoutTextLeft"
+                    android:text="幼儿园" />
+
+                <TextView style="@style/LayoutTextRight"
+                    android:id="@+id/tv_school_name"
+                    />
+
+                <View
+                    style="@style/BottomLine"
+                    android:layout_gravity="bottom" />
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/LayoutPadding"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/LayoutTextLeft"
+                    android:text="学号" />
+
+                <TextView style="@style/LayoutTextRight"
+                    android:id="@+id/tv_schoolid"
+                    />
+
+                <View
+                    style="@style/BottomLine"
+                    android:layout_gravity="bottom" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_revise_phone"
+                style="@style/LayoutPadding"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/LayoutTextLeft"
+                    android:text="家长手机号" />
+
+                <TextView style="@style/LayoutTextRightArrow"
+                    android:id="@+id/tv_mobile"
+                    />
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/tv_revise_pwd"
+                style="@style/LayoutPadding"
+                android:layout_height="50dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/white"
+                android:drawableEnd="@mipmap/ic_arrow_right"
+                android:gravity="center_vertical"
+                android:text="修改密码"
+                android:textColor="@color/text_gray_2"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/btn_out"
+                android:layout_width="217dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/shape_btn_point_primary"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+

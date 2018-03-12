@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/rule1"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/rule2"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/btn_go_test"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="74dp"
+            android:background="@drawable/selector_btn"
+            android:paddingLeft="76dp"
+            android:paddingRight="76dp"
+            android:text="立即测试"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+</layout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d6dbe8" />
+
+    <RadioGroup
+        android:id="@+id/rg_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:checkedButton="@+id/rb_home"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@id/rb_home"
+            style="@style/main_bottom_navigation_radiobuttonn"
+            android:drawableTop="@drawable/selector_main_bottom_home"
+            android:text="@string/navigation_main_bottom_apply" />
+
+        <RadioButton
+            android:id="@+id/rb_apply"
+            style="@style/main_bottom_navigation_radiobuttonn"
+            android:drawableTop="@drawable/selector_main_bottom_apply"
+            android:text="@string/navigation_main_bottom_apply" />
+
+        <RadioButton
+            android:id="@+id/rb_service"
+            style="@style/main_bottom_navigation_radiobuttonn"
+            android:drawableTop="@drawable/selector_main_bottom_service"
+            android:text="@string/navigation_main_bottom_service" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/main_bottom_navigation_radiobuttonn"
+            android:drawableTop="@drawable/selector_main_bottom_mine"
+            android:text="@string/navigation_main_bottom_mine" />
+    </RadioGroup>
+</LinearLayout>

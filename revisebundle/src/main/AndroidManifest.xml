@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.ice.revisebundle">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity
+            android:name=".ui.RevisePhone.RevisePhoneActivity"
+            android:label="修改手机号" />
+
+        <activity
+            android:name=".ui.RevisePwd.RevisePwdAvtivity"
+            android:label="修改密码" />
+        <activity android:name=".ui.ReviseNickname.ReviseNicknameAvtivity"
+            android:label="修改昵称"/>
+    </application>
+
+</manifest>

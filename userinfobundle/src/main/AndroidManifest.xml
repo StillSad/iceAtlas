@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ice.userinfobundle">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".ui.BaseInfoActivity"
+            android:label="基本信息" />
+
+    </application>
+
+</manifest>

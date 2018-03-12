@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ice.loginbundle">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity
+            android:name=".ui.Login.LoginActivity"
+            android:label="登录" />
+        <activity
+            android:name=".ui.FindPwd.FindPwdActivity"
+            android:label="找回密码" />
+        <activity
+            android:name=".ui.Register.RegisterActivity"
+            android:label="注册" />
+    </application>
+
+</manifest>
