@@ -7,14 +7,27 @@ import android.support.v4.util.ArrayMap;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.ice.library.base.BaseApplication;
+import com.ice.library.constant.AppConfig;
+import com.ice.library.http.Provider.OkhttpProvider;
+import com.ice.library.http.Provider.RetrofitProvider;
+import com.ice.library.http.cacahe.CacheProvide;
+import com.ice.library.http.interceptor.HttpCacheInterceptor;
+import com.thinkwage.library.BuildConfig;
 
 
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * Created by jess on 8/4/16.
@@ -29,18 +42,26 @@ public class AppModule {
 
     @Singleton
     @Provides
-    public Application provideApplication() {
+    Application provideApplication() {
         return mApplication;
     }
 
     @Singleton
     @Provides
-    public Gson provideGson(Application application, @Nullable GsonConfiguration configuration){
-        GsonBuilder builder = new GsonBuilder();
-        if (configuration != null)
-            configuration.configGson(application, builder);
+    GsonBuilder provideGsonBuilder(){
+        return new GsonBuilder();
+    }
+
+    @Singleton
+    @Provides
+    Gson provideGson(GsonBuilder builder){
+        builder
+                .setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ")
+                .serializeNulls();
         return builder.create();
     }
+
+
 
 
     @Singleton

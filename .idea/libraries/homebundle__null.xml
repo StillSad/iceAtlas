@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="homebundle::null">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/homebundle-debug.awb/6661a024515c2574bf60b54dcc072e85/jars/classes.jar/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/homebundle-debug.awb/6661a024515c2574bf60b54dcc072e85/jars/classes.jar/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

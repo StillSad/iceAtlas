@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 //import android.support.multidex.MultiDex;
 
+import com.api.NetFactory;
 import com.bilibili.boxing.BoxingCrop;
 import com.bilibili.boxing.BoxingMediaLoader;
 import com.bilibili.boxing.loader.IBoxingMediaLoader;
@@ -25,7 +26,6 @@ import com.ice.library.di.component.AppComponent;
 public class BaseApplication extends Application implements App{
     private AppDelegate mAppDelegate;
     private static BaseApplication mApp;
-
 
 
     @Override

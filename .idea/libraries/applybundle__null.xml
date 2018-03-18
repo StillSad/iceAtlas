@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="applybundle::null">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/applybundle-debug.awb/c7c79c97d1e060181835cddd6f859618/jars/classes.jar/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/applybundle-debug.awb/c7c79c97d1e060181835cddd6f859618/jars/classes.jar/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -2,7 +2,7 @@ package com.thinkwage.homebundle.ui;
 
 import com.ice.library.mvp.BaseView;
 import com.ice.library.mvp.IModel;
-import com.thinkwage.homebundle.bean.HomeBean;
+import com.ice.api.bean.HomeBean;
 
 import java.util.List;
 

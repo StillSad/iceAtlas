@@ -18,8 +18,8 @@
     <output-test url="file://$MODULE_DIR$/build/classes/java/test" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/main/groovy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/groovy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/groovy" isTestSource="true" />
@@ -29,7 +29,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="atlasplugin-3.0.1-rc21" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="atlasplugin-3.0.1-rc24-1" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="aspectjtools-1.8.6" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="aspectjrt-1.8.6" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="dex_patch-1.4.4.19" level="project" />

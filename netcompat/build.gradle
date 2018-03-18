@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    defaultPublishConfig "debug"
+    defaultConfig {
+
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //RXJAVA
+    compile rootProject.ext.dependencies["rxjava2"]
+    compile(rootProject.ext.dependencies["rxandroid2"]) {
+        exclude module: 'rxjava'
+    }
+    compile(rootProject.ext.dependencies["rxcache2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'dagger'
+    }
+    compile(rootProject.ext.dependencies["rxcache-jolyglot-gson"]) {
+        exclude module: 'gson'
+    }
+    compile(rootProject.ext.dependencies['rxerrorhandler2']) {
+        exclude module: 'rxjava'
+    }
+    compile(rootProject.ext.dependencies["rxlifecycle2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'jsr305'
+    }
+    compile(rootProject.ext.dependencies["rxlifecycle2-components"]) {
+        exclude module: 'support-v4'
+        exclude module: 'appcompat-v7'
+        exclude module: 'support-annotations'
+        exclude module: 'rxjava'
+        exclude module: 'rxandroid'
+        exclude module: 'rxlifecycle'
+    }
+    //NET
+    compile(rootProject.ext.dependencies["retrofit"]) {
+        exclude module: 'okhttp3'
+    }
+    compile(rootProject.ext.dependencies["retrofit-converter-gson"]) {
+        exclude module: 'gson'
+    }
+    compile(rootProject.ext.dependencies["retrofit-adapter-rxjava2"]) {
+        exclude module: 'rxjava'
+    }
+    compile rootProject.ext.dependencies["okhttp-logging-interceptor"]
+    annotationProcessor project(':apt')
+    implementation project(':lib')
+}

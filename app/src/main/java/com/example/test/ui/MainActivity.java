@@ -10,6 +10,7 @@ import android.view.KeyEvent;
 import android.widget.FrameLayout;
 import android.widget.RadioGroup;
 
+import com.api.NetFactory;
 import com.app.annotation.apt.MvpActivity;
 import com.taobao.android.ActivityGroupDelegate;
 import com.example.test.R;
@@ -23,7 +24,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     FrameLayout flContent;
     RadioGroup rgNavigation;
     private ActivityGroupDelegate mActivityDelegate;
-
     // 连续两次返回退出程序
     private long exitTime = 0;
 
@@ -64,12 +64,9 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 //                DebugHierarchyViewContainer container = new DebugHierarchyViewContainer(this);
 //                container.bindFragmentRecords(getFragmentRecords());
 //                container.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-
-
                 break;
         }
     }
-
 
 
 //    @Override

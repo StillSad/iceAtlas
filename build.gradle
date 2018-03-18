@@ -14,7 +14,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.taobao.android:atlasplugin:3.0.1-rc21"
+        classpath "com.taobao.android:atlasplugin:3.0.1-rc24-1"
 //        classpath 'com.android.tools.build:gradle:3.0.1'
         classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
         //aop

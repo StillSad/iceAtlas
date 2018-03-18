@@ -6,7 +6,7 @@ sourceCompatibility = JavaVersion.VERSION_1_7
 dependencies {
     compile gradleApi()
     compile localGroovy()
-    compile 'com.taobao.android:atlasplugin:3.0.1-rc21'
+    compile "com.taobao.android:atlasplugin:3.0.1-rc24-1"
 //    compile 'com.android.tools.build:gradle:3.0.1'
     compile 'org.aspectj:aspectjtools:1.8.6'
     compile 'org.aspectj:aspectjrt:1.8.6'

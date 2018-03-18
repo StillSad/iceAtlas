@@ -40,7 +40,9 @@ dependencies {
     testCompile rootProject.ext.dependencies["junit"]
     annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
     annotationProcessor project(':apt')
+//    compile project(':netcompat')
     annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
-    providedCompile project(path: ':ice',configuration: "compileProject")
+//    providedCompile project(path: ':ice',configuration: "compileProject")
+    implementation project(path: ':ice', configuration: 'compileProject')
 }
 apply plugin: com.thinkwage.plugin.AspectPlugin

@@ -8,7 +8,7 @@ import com.ice.library.http.Subscriber.HttpSubscriber;
 import com.ice.library.integration.AppManager;
 import com.ice.library.mvp.BasePresenter;
 import com.ice.library.utils.RxUtils;
-import com.thinkwage.homebundle.bean.HomeBean;
+import com.ice.api.bean.HomeBean;
 
 import javax.inject.Inject;
 

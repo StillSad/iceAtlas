@@ -8,13 +8,12 @@ import com.alibaba.android.vlayout.VirtualLayoutManager;
 import com.alibaba.android.vlayout.layout.GridLayoutHelper;
 import com.alibaba.android.vlayout.layout.LinearLayoutHelper;
 import com.app.annotation.apt.MvpActivity;
-import com.bumptech.glide.Glide;
+import com.ice.api.bean.HomeBean;
 import com.thinkwage.homebundle.R;
 import com.thinkwage.homebundle.R2;
 import com.thinkwage.homebundle.adapter.DelegateFunctionModuleAdapter;
 import com.thinkwage.homebundle.adapter.DelegateHeaderAdapter;
 import com.thinkwage.homebundle.base.ComponentActivity;
-import com.thinkwage.homebundle.bean.HomeBean;
 import com.thinkwage.homebundle.di.component.ActivityComponent;
 
 

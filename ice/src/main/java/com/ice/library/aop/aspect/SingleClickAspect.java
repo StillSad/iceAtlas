@@ -23,7 +23,7 @@ import java.util.Calendar;
 @Aspect
 public class SingleClickAspect {
     static int TIME_TAG = R.id.click_time;
-    public static final int MIN_CLICK_DELAY_TIME = 600;
+    public static final int MIN_CLICK_DELAY_TIME = 1000;
 
 //    @Pointcut("execution(@com.ice.library.aop.annotation.SingleClick * *(..))")//方法切入点
     @Pointcut("execution(@com.ice.library.aop.annotation.SingleClick * *(..))")//方法切入点

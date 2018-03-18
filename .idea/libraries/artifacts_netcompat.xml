@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="artifacts:netcompat">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/netcompat-debug.aar/2737d8f38d97b1cf541a134206d6d3db/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/netcompat-debug.aar/2737d8f38d97b1cf541a134206d6d3db/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/netcompat-debug.aar/db9e627ef21c821758d936d43b1e5d81/jars/classes.jar!/" />
+    </SOURCES>
+  </library>
+</component>

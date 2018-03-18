@@ -9,7 +9,7 @@ import com.ice.library.base.fragment.BaseFragment;
 import com.thinkwage.homebundle.R;
 import com.thinkwage.homebundle.R2;
 import com.thinkwage.homebundle.base.ComponentFragment;
-import com.thinkwage.homebundle.bean.HomeBean;
+import com.ice.api.bean.HomeBean;
 import com.thinkwage.homebundle.di.component.FragmentComponent;
 
 import java.util.List;

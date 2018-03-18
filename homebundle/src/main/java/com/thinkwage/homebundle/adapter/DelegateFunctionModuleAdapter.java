@@ -17,6 +17,7 @@ import com.thinkwage.homebundle.R;
  */
 
 public class DelegateFunctionModuleAdapter extends DelegateAdapter.Adapter {
+
     public Context context;
     private LayoutHelper helper;
     private LayoutInflater inflater;

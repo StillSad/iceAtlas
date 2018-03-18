@@ -2,6 +2,7 @@ package com.app.apt;
 
 import com.app.apt.processor.ApiFactoryProcessor;
 import com.app.apt.processor.ApiProcessor;
+import com.app.apt.processor.ApiServiceProcessor;
 import com.app.apt.processor.DiProcessor;
 import com.google.auto.service.AutoService;
 
@@ -24,6 +25,7 @@ import javax.lang.model.util.Elements;
         "com.app.annotation.apt.ApiFactory",
         "com.app.annotation.apt.MvpActivity",
         "com.app.annotation.apt.MvpFragment",
+        "com.app.annotation.apt.ApiService",
 })
 public class AnnotationProcessor extends AbstractProcessor {
     public Filer mFiler; //文件相关的辅助类
@@ -38,6 +40,7 @@ public class AnnotationProcessor extends AbstractProcessor {
         new ApiFactoryProcessor().process(roundEnv, this);
         new ApiProcessor().process(roundEnv,this);
         new DiProcessor().process(roundEnv,this);
+        new ApiServiceProcessor().process(roundEnv,this);
         return true;
     }
 }

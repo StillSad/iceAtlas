@@ -53,9 +53,12 @@ android {
     productFlavors {
         ceshi {
             dimension "release"
+            resValue "string","app_name","个税关键"
+
         }
         Huawei{
             dimension "release"
+            resValue "string","app_name","个税管家"
         }
     }
     configurations.all {
@@ -64,42 +67,69 @@ android {
 }
 
 dependencies {
-//    compile fileTree(include: ['*.jar'], dir: 'libs')
-//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-//        exclude group: 'com.android.support', module: 'support-annotations'
-//    })
+
+    //    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    //    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+
+    //        exclude group: 'com.android.support', module: 'support-annotations'
+
+    //    })
+
     //
-//    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
-//    annotationProcessor project(':apt')
-//    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+
+    //    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+
+    //    annotationProcessor project(':apt')
+
+    //    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
 
     //atlas
     compile rootProject.ext.dependencies["atlasupdate"]
-    compile (rootProject.ext.dependencies["atlascore"]) {
+    compile(rootProject.ext.dependencies["atlascore"]) {
         transitive = true
     }
 
     //基础库
-//    providedCompile project(':ice')
-//    compile project(':ice')
-    providedCompile project(path: ':ice', configuration: 'compileProject')
-    providedCompile project(path:':activitygroupcompat',configuration: "compileProject")
-//    providedCompile project(':iflyteklib')
-//    compile project(':activitygroupcompat')
-//    compile project(':splashscreen')
+
+    //    providedCompile project(':ice')
+
+    //    compile project(':ice')
+    implementation project(":ice")
+//    providedCompile project(path: ':ice', configuration: 'compileProject')
+//    providedCompile project(path: ':activitygroupcompat', configuration: "compileProject")
+    providedCompile project(':activitygroupcompat')
+
+    //    providedCompile project(':iflyteklib')
+
+    //    compile project(':activitygroupcompat')
+
+    //    compile project(':splashscreen')
+
     //bundle
-//    bundleCompile project(':loginbundle')
-//    bundleCompile project(':userinfobundle')
-//    bundleCompile project(':revisebundle')
-//    bundleCompile project(':visiontestbundle')
+
+    //    bundleCompile project(':loginbundle')
+
+    //    bundleCompile project(':userinfobundle')
+
+    //    bundleCompile project(':revisebundle')
+
+    //    bundleCompile project(':visiontestbundle')
     bundleCompile project(path: ':homebundle', configuration: 'compileProject')
 
     bundleCompile project(path: ':applybundle', configuration: 'compileProject')
-    bundleCompile project(path: ':servicebundle', configuration: 'compileProject')
-    bundleCompile project(path: ':minebundle', configuration: 'compileProject')
-//    bundleCompile project(':applybundle')
-//    bundleCompile project(':servicebundle')
-//    bundleCompile project(':minebundle')
+
+    //    bundleCompile project(path: ':servicebundle', configuration: 'compileProject')
+
+    //    bundleCompile project(path: ':minebundle', configuration: 'compileProject')
+
+    //    bundleCompile project(':applybundle')
+
+    //    bundleCompile project(':servicebundle')
+
+    //    bundleCompile project(':minebundle')
+
+
 }
 
 
